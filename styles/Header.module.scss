@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttonsArea {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+    * {
+        margin-left: 35px;
+    }
+}
