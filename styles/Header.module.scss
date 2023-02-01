@@ -1,9 +1,20 @@
+// $base-color: #F2CC8F;
+// $focus-color: #ac9167;
+$base-color: #00ADB5;
+$focus-color: #00747C;
+
 .main {
     margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content:space-around;
     flex-wrap: wrap;
+
+    // background: rgba(0, 0, 0, 0.062);
+    // backdrop-filter: blur(15px);
+    // -webkit-backdrop-filter: blur(10px);
+
+    z-index: 2;
     * {
         color: #ffffff;
         text-decoration: none;
@@ -30,6 +41,7 @@
     align-items:center;
     flex-direction: row;
     font-size: 1rem;
+    z-index: 2;
     * {
         position: relative;
         display: flex;
@@ -37,23 +49,28 @@
         flex-direction: column;
         margin-left: 20px;
         margin-right: 20px;
+        transition: background-color 200ms;
         &::after {
             content:"";
             position: absolute;
-            background: radial-gradient(circle, rgb(242, 204, 143) 1%, rgba(242, 204, 143, 0.6250875350140056) 40%, rgba(164, 22, 26,0) 100%);
-            box-shadow: 0px 0px 30px #F2CC8F;
+            background-color: $base-color;
+            // background: radial-gradient(circle, rgb(242, 204, 143) 1%, rgba(242, 204, 143, 0.6250875350140056) 40%, rgba(164, 22, 26,0) 100%);
+            // box-shadow: 0px 0px 30px #F2CC8F;
             width: 0%;
-            margin-top: 1.5rem;
-            height: .1rem;
-            transition: width 400ms;
+            margin-top: 1.35rem;
+            height: .05rem;
+            transition: width 200ms;
         }
         &:hover {
-            color: #F2CC8F;
-            transition: color 400ms;
+            color: $base-color;
+            transition: color 200ms;
             &:hover::after {
-                width: 130%;
-                transition: width 400ms;
+                width: 110%;
+                transition: width 200ms;
             }
+        };
+        &:active {
+            color: $focus-color;
         };
     };
     }

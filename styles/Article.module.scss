@@ -21,9 +21,14 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-
-    img{
-        opacity: 5%;
-        object-fit: contain;
+    // background-image: url("../public/background033.png");
+    background-size: 20rem;
+    background-repeat: repeat;
+    opacity: 5%;
+    z-index: 1;
+    filter: blur(6px);
+    & img{
+        opacity: 100%;
+        object-fit:fill;
     }
 }

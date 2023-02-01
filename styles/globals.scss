@@ -105,9 +105,10 @@
 //     color-scheme: dark;
 //   }
 // }
+$global-background-color: #171c22;
 
 :root {
-    background-color: #2a2c3f;
+    background-color: $global-background-color;
 }
 
 input[type='number'] {
