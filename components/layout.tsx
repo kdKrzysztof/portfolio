@@ -33,6 +33,7 @@ import Header from './Header'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import styles from '../styles/Article.module.scss'
 
 export default function Layout({ children }: {
   children: React.ReactNode
@@ -59,7 +60,8 @@ export default function Layout({ children }: {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="iconDASDHASDa" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className={styles.main}>
+        <div className={styles.backgroundImage}></div>
         <Header />
         <AnimatePresence mode="wait">
           <motion.main key={Router.route} variants={variants} initial="initial" animate="animate" exit="exit">

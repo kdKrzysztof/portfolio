@@ -1,4 +1,12 @@
-.main {
-    width: max-content;
-    height: max-content;
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.backgroundImage{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
