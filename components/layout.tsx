@@ -29,11 +29,16 @@
 //     </html>
 //   )
 // }
+
 import Header from './Header'
+import Footer from './Footer'
+
+import Head from 'next/head'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/router'
-import Head from 'next/head'
 import styles from '../styles/Article.module.scss'
+import backgroundImage from '../public/background.webp'
+import Image from 'next/image'
 
 export default function Layout({ children }: {
   children: React.ReactNode
@@ -61,13 +66,16 @@ export default function Layout({ children }: {
         <link rel="iconDASDHASDa" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.backgroundImage}></div>
+        <div className={styles.background}>
+          <Image src={backgroundImage} alt="" className={[styles.noselect, styles.image].join(' ')}></Image>
+        </div>
         <Header />
         <AnimatePresence mode="wait">
           <motion.main key={Router.route} variants={variants} initial="initial" animate="animate" exit="exit">
             {children}
           </motion.main>
         </AnimatePresence>
+        <Footer />
       </main>
     </>
   )

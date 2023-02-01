@@ -1,4 +1,5 @@
 .main {
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content:space-around;
@@ -8,7 +9,19 @@
         text-decoration: none;
     };
     p {
-        font-size: 1.25rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        font-size: 1.5rem;
+        &::after{
+            content:"";
+            position: absolute;
+            // background: radial-gradient(circle, rgb(242, 204, 143) 1%, rgba(242, 204, 143, 0.6250875350140056) 40%, rgba(164, 22, 26,0) 100%);
+            width: 125%;
+            margin-top: 2.5rem;
+            height: .1rem;
+        }
     }
 }
 
@@ -16,12 +29,11 @@
     display: flex;
     align-items:center;
     flex-direction: row;
-    
+    font-size: 1rem;
     * {
         position: relative;
         display: flex;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
         margin-left: 20px;
         margin-right: 20px;
@@ -31,16 +43,16 @@
             background: radial-gradient(circle, rgb(242, 204, 143) 1%, rgba(242, 204, 143, 0.6250875350140056) 40%, rgba(164, 22, 26,0) 100%);
             box-shadow: 0px 0px 30px #F2CC8F;
             width: 0%;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
             height: .1rem;
-            transition: width 200ms;
+            transition: width 400ms;
         }
         &:hover {
             color: #F2CC8F;
             transition: color 400ms;
             &:hover::after {
                 width: 130%;
-                transition: width 300ms;
+                transition: width 400ms;
             }
         };
     };

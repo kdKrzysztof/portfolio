@@ -21,9 +21,10 @@ const Header = () => {
       <p className={merriweather.className}>{`Krzysztof Kudzia`}</p>
       <span className={[styles.buttonsArea, roboto.className].join(' ')}>
         <Link href="/">Home</Link>
-        <Link href="/About">About</Link>
-        <Link href="/Portfolio">Portfolio</Link>
-        <Link href="/Contact">Contact</Link>
+        <Link href="/About">About Me</Link>
+        <Link href="/Skills">My Skills</Link>
+        <Link href="/Portfolio">My Work</Link>
+        <Link href="/Contact">Contact me</Link>
       </span>
     </div>
   )
