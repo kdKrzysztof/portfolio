@@ -52,12 +52,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   };
 
   const Router = useRouter();
-  const query = Router.query;
-  const pageId = query.id;
-
-  if (Router.isReady) {
-    console.log(pageId);
-  }
 
   return (
     <>
@@ -70,7 +64,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </Head>
       <main className={styles.main}>
         <Header />
-        <div>{pageId}</div>
         <AnimatePresence mode="wait">
           <motion.main
             key={Router.route}
