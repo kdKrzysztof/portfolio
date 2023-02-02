@@ -16,26 +16,23 @@
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        width: 40%;
+        width: 70%;
         height: 100%;
+        margin-left: 10%;
         // background-color: red;
-
+        
         & button {
             border-color: #00ADB5;
             color: #00ADB5;
+            margin-top: 1.5rem;
+            margin-right: 2rem;
         }
 
         & div {
-            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
         }
     };
-    
-    & .part2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 20%;
-        height: 100%;
-        // background-color: blue;
-    }
 }

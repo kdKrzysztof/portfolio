@@ -9,22 +9,43 @@ $focus-color: #00747C;
     align-items: center;
     justify-content:space-around;
     flex-wrap: wrap;
-
     // background: rgba(0, 0, 0, 0.062);
     // backdrop-filter: blur(15px);
     // -webkit-backdrop-filter: blur(10px);
-
+    
     z-index: 2;
     * {
         color: #ffffff;
         text-decoration: none;
     };
-    p {
+
+    
+    & div {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        flex-direction: column;
-        position: relative;
-        font-size: 1.5rem;
+        & button {
+            display: none;
+        }
+        @media screen and (max-width: 700px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 525px) {
+            & button {
+                display: flex;
+                margin-left: 2rem;
+            }
+            justify-content: space-around;
+        }
+
+        & p {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            font-size: 1.5rem;
         &::after{
             content:"";
             position: absolute;
@@ -36,13 +57,27 @@ $focus-color: #00747C;
     }
 }
 
+}
+
 .buttonsArea {
     display: flex;
     align-items:center;
     flex-direction: row;
     font-size: 1rem;
     z-index: 2;
-    * {
+    overflow: hidden;
+    transition: max-height 500ms linear;
+
+    @media screen and (max-width: 525px) {
+        position: sticky;
+        flex-direction: column;
+        max-height: 0;
+        & * {
+            margin-top: 1rem;
+        }
+    }
+
+    & * {
         position: relative;
         display: flex;
         align-items: center;
@@ -73,4 +108,9 @@ $focus-color: #00747C;
             color: $focus-color;
         };
     };
-    }
+}
+
+.show {
+    max-height: 200px;
+    transition: max-height 500ms linear;
+}
