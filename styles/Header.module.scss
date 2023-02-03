@@ -52,6 +52,7 @@ $focus-color: #00747C;
         @media screen and (max-width: 525px) {
             & button {
                 display: flex;
+                border: 0;
                 margin-left: 2rem;
             }
             justify-content: space-around;
@@ -85,7 +86,7 @@ $focus-color: #00747C;
             // background: radial-gradient(circle, rgb(242, 204, 143) 1%, rgba(242, 204, 143, 0.6250875350140056) 40%, rgba(164, 22, 26,0) 100%);
             // box-shadow: 0px 0px 30px #F2CC8F;
             width: 0%;
-            margin-top: 1.35rem;
+            margin-top: 1.5rem;
             height: .05rem;
             transition: width 200ms;
         }
