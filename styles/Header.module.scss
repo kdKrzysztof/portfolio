@@ -28,6 +28,23 @@ $focus-color: #00747C;
         & button {
             display: none;
         }
+        
+        & p {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            font-size: 1.5rem;
+            &::after{
+                content:"";
+                position: absolute;
+                // background: radial-gradient(circle, rgb(242, 204, 143) 1%, rgba(242, 204, 143, 0.6250875350140056) 40%, rgba(164, 22, 26,0) 100%);
+                width: 125%;
+                margin-top: 2.5rem;
+                height: .1rem;
+            }
+        }
+        
         @media screen and (max-width: 700px) {
             width: 100%;
         }
@@ -39,22 +56,6 @@ $focus-color: #00747C;
             }
             justify-content: space-around;
         }
-
-        & p {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
-            font-size: 1.5rem;
-        &::after{
-            content:"";
-            position: absolute;
-            // background: radial-gradient(circle, rgb(242, 204, 143) 1%, rgba(242, 204, 143, 0.6250875350140056) 40%, rgba(164, 22, 26,0) 100%);
-            width: 125%;
-            margin-top: 2.5rem;
-            height: .1rem;
-        }
-    }
 }
 
 }
@@ -66,17 +67,9 @@ $focus-color: #00747C;
     font-size: 1rem;
     z-index: 2;
     overflow: hidden;
-    transition: max-height 500ms linear;
+    transition: max-height 300ms ease-in;
 
-    @media screen and (max-width: 525px) {
-        position: sticky;
-        flex-direction: column;
-        max-height: 0;
-        & * {
-            margin-top: 1rem;
-        }
-    }
-
+    
     & * {
         position: relative;
         display: flex;
@@ -108,9 +101,19 @@ $focus-color: #00747C;
             color: $focus-color;
         };
     };
+
+
+    @media screen and (max-width: 525px) {
+        position: sticky;
+        flex-direction: column;
+        max-height: 0;
+        & * {
+            margin-top: 1rem;
+        }
+    }
 }
 
 .show {
     max-height: 200px;
-    transition: max-height 500ms linear;
+    transition: max-height 300ms ease-in;
 }

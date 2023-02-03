@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 // import styles from '../styles/Header.module.scss'
 import styles from '../styles/Header.module.scss';
-import { Roboto, Merriweather } from '@next/font/google';
+import { Roboto, Merriweather, Poppins } from '@next/font/google';
 
 import { Button } from '@mui/material';
 import MenuSharpIcon from '@mui/icons-material/MenuSharp';
@@ -14,7 +14,11 @@ const roboto = Roboto({
 
 const merriweather = Merriweather({
   weight: '400',
-  display: 'auto',
+  subsets: ['latin']
+});
+
+const poppins = Poppins({
+  weight: '400',
   subsets: ['latin']
 });
 
@@ -35,7 +39,7 @@ const Header = () => {
           <MenuSharpIcon sx={{ display: 'flex', minHeight: '1.8rem' }}></MenuSharpIcon>
         </Button>
       </div>
-      <span className={[styles.buttonsArea, roboto.className, showMenu && styles.show].join(' ')}>
+      <span className={[styles.buttonsArea, poppins.className, showMenu && styles.show].join(' ')}>
         <Link href="/">Home</Link>
         <Link href="/About">About Me</Link>
         <Link href="/Skills">My Skills</Link>
