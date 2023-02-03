@@ -17,14 +17,14 @@
 }
 
 .background{
-    position: absolute;
+    position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    // background-image: url("../public/background033.png");
-    background-size: 20rem;
-    background-repeat: repeat;
-    opacity: 5%;
+    // background-image: url("../public/bgphoto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 100%;
     z-index: 1;
     filter: blur(6px);
     & img{

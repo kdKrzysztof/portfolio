@@ -23,15 +23,15 @@ const Contact = () => {
             Krzysztof Kudzia
           </Typography>
           <Typography variant="h4">Aspiring Fullstack Developer</Typography>
+          <div>
+            <Button variant="outlined" size="medium">
+              Download my CV
+            </Button>
+            <Button variant="outlined" size="medium">
+              Contact me
+            </Button>
+          </div>
         </ThemeProvider>
-        <div>
-          <Button variant="outlined" size="medium">
-            Download my CV
-          </Button>
-          <Button variant="outlined" size="medium">
-            Contact me
-          </Button>
-        </div>
       </div>
     </div>
   );
