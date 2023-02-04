@@ -7,7 +7,7 @@ $focus-color: #00747C;
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 80vh;
+    height: auto;
 
     
     & .content {
@@ -15,12 +15,28 @@ $focus-color: #00747C;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        width: 70%;
+        width: 60%;
+        height: 100%;
         
-        @media  screen and (max-width: 705px) {
+        @media screen and (max-width: 705px) {
             flex-direction: column;
             width: 100%;
+            margin-top: 10%;
+            margin-bottom: 10%;
         }
+
+        @media screen and (max-width: 1506px) {
+            width: 65%;
+        }
+
+        @media screen and (max-width: 1250px) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: 1045px) {
+           width: 80%; 
+        }
+
 
         & .leftSide {
             display: flex;
@@ -38,14 +54,24 @@ $focus-color: #00747C;
                 justify-content: flex-end;
                 flex-direction: column;
                 position: relative;
-                margin-top: 2.5rem; //been using these options for ::after
+                margin-top: 1rem; //been using these options for ::after
             }
         }
         & .rightSide {
             display: flex;
+            justify-content: center;
             align-items: center;
             flex-direction: column;
             width: 50%;
+            height: 100%;
+            margin-left: 10%;
+
+            @media screen and (max-width: 705px) {
+                flex-direction: column;
+                width: 70%;
+                margin-left: 0;
+                margin-top: 3rem;
+            }
         }
     }
 }
@@ -56,13 +82,13 @@ $focus-color: #00747C;
     flex-direction: row;
     overflow: hidden;
     position: relative;
-    margin-left: 1rem;
+    // margin-left: 1rem;
     &::after {
         position: absolute;
         margin-left: 10rem;
         content: "";
         width: 100%;
         height: 1px;
-        background-color: $base-color;
+        background-color: $focus-color;
     }
 }
