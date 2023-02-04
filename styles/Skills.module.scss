@@ -1,6 +1,91 @@
+$base-color: #00ADB5;
+$focus-color: #00747C;
+$skill-background-color: #171b20;
+
 .main {
     display: flex;
-    background-color: red;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100vw;
-    height: max-content;
+    height: auto;
+
+    
+    & .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        & .leftSide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        & .rightSide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 2rem;
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+
+            & * {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.Title{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    // margin-left: 1rem;
+    width: 100%;
+
+    @media screen and (max-width: 375px) {
+        font-size: 100%;
+    }
+
+    &::before {
+        content: "";
+        width: 30%;
+        margin-right: 2%;
+        height: 1px;
+        background-color: $focus-color;
+        @media screen and (max-width: 375px) {
+            margin-right: 5%;
+        }
+    }
+    
+    &::after {
+        content: "";
+        width: 30%;
+        margin-left: 2%;
+        height: 1px;
+        background-color: $focus-color;
+        @media screen and (max-width: 375px) {
+            margin-left: 5%;
+        }
+    }
+}
+
+.SkillImage{
+    width: 5rem;
+    height: 5rem;
 }

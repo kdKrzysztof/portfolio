@@ -3,7 +3,9 @@ import { Typography, Grid } from '@mui/material';
 import styles from '../styles/About.module.scss';
 import styled from '@emotion/styled';
 
-import { SchoolSharp, WorkHistorySharp, FolderSharedSharp } from '@mui/icons-material';
+import SchoolSharpIcon from '@mui/icons-material/SchoolSharp';
+import WorkHistorySharpIcon from '@mui/icons-material/WorkHistorySharp';
+import FolderSpecialSharpIcon from '@mui/icons-material/FolderSpecialSharp';
 import Link from 'next/link';
 
 const RightText = styled.div`
@@ -39,7 +41,7 @@ const About = () => {
                   variant="h6"
                   color="#00ADB5"
                   sx={{ display: 'flex', alignItems: 'center' }}>
-                  <SchoolSharp sx={{ marginRight: '1rem' }} /> Education
+                  <SchoolSharpIcon sx={{ marginRight: '1rem' }} /> Education
                 </Typography>
                 <Typography variant="subtitle2" color="white">
                   Eu id laboris sit dolor irure cupidatat laborum et voluptate non anim
@@ -51,7 +53,7 @@ const About = () => {
                 variant="h6"
                 color="#00ADB5"
                 sx={{ display: 'flex', alignItems: 'center' }}>
-                <WorkHistorySharp sx={{ marginRight: '1rem' }} />
+                <WorkHistorySharpIcon sx={{ marginRight: '1rem' }} />
                 Work Experience
               </Typography>
               <Typography variant="subtitle2" color="white">
@@ -66,7 +68,7 @@ const About = () => {
                   display: 'flex',
                   alignItems: 'center'
                 }}>
-                <FolderSharedSharp sx={{ marginRight: '1rem' }} />
+                <FolderSpecialSharpIcon sx={{ marginRight: '1rem' }} />
                 <Link href="/Portfolio" style={{ textDecoration: 'none', color: '#00ADB5' }}>
                   Personal Work
                 </Link>
