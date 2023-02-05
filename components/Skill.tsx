@@ -13,14 +13,23 @@ const Skill = (props: any) => {
         alignItems: 'center',
         flexDirection: 'column',
         color: 'white',
-        border: '1px solid #00ADB5',
+        // border: '1px solid #00ADB5',
         borderRadius: '8px',
         margin: '1rem',
-        padding: '.5rem'
+        padding: '.5rem',
+        transition: 'background-color 200ms',
+        // backgroundColor: 'rgb(0, 173, 181, 0.05)',
+        ':hover': {
+          backgroundColor: 'rgb(0, 173, 181, 0.05)',
+          transition: 'background-color 200ms'
+        }
       }}
-      width="12rem">
+      maxWidth="6rem"
+      maxHeight="6rem">
       <Image src={props.ImageURL} alt="" className={styles.SkillImage} />
-      <Typography variant="subtitle1">{props.SkillName}</Typography>
+      <Typography variant="subtitle1" color="#00ADB5">
+        {props.SkillName}
+      </Typography>
     </Box>
   );
 };
