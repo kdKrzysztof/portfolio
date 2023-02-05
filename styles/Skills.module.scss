@@ -101,6 +101,8 @@ $skill-background-color: #171b20;
         margin-left: 2%;
         height: 1px;
         background-color: $focus-color;
+        // transition: width 400ms 0 200ms;
+
         @media screen and (max-width: 375px) {
             margin-left: 5%;
         }
