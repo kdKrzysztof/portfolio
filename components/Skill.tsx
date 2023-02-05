@@ -3,6 +3,22 @@ import React from 'react';
 import { Typography, Box, Grid } from '@mui/material';
 import styles from '../styles/Skills.module.scss';
 import Image from 'next/image';
+import { Roboto, Merriweather, Poppins } from '@next/font/google';
+
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin']
+});
+
+const merriweather = Merriweather({
+  weight: '400',
+  subsets: ['latin']
+});
+
+const poppins = Poppins({
+  weight: '300',
+  subsets: ['latin']
+});
 
 const Skill = (props: any) => {
   return (
@@ -27,7 +43,7 @@ const Skill = (props: any) => {
       maxWidth="6rem"
       maxHeight="6rem">
       <Image src={props.ImageURL} alt="" className={styles.SkillImage} />
-      <Typography variant="subtitle1" color="#00ADB5">
+      <Typography variant="subtitle1" style={poppins.style}>
         {props.SkillName}
       </Typography>
     </Box>

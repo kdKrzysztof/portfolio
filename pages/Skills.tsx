@@ -20,15 +20,29 @@ import MARIADBlogo from '../public/techstack_icons/mariadb-logo.png';
 import SEQUELIZElogo from '../public/techstack_icons/sequelize-logo.png';
 import MUIlogo from '../public/techstack_icons/mui-logo.png';
 
+import { Poppins } from '@next/font/google';
+
+const poppins = Poppins({
+  weight: '300',
+  subsets: ['latin']
+});
+
 const Skills = () => {
   return (
     <div className={styles.main}>
       <div className={styles.content}>
         <div className={styles.leftSide}>
-          <Typography variant="h4" color="#00ADB5" className={styles.Title}>
+          <Typography
+            variant="h4"
+            color="#00ADB5"
+            className={[styles.Title, styles.noselect].join(' ')}>
             My Skills
           </Typography>
-          <Typography variant="subtitle1" color="white">
+          <Typography
+            variant="subtitle1"
+            color="white"
+            className={styles.noselect}
+            style={poppins.style}>
             {`I've worked with these technologies:`}
           </Typography>
         </div>

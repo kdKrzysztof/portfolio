@@ -2,6 +2,16 @@ $base-color: #00ADB5;
 $focus-color: #00747C;
 $skill-background-color: #171b20;
 
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+                  user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -39,10 +49,21 @@ $skill-background-color: #171b20;
             height: auto;
             flex-wrap: wrap;
 
+            @media screen and (max-width: 772px) {
+                width: 100%;
+            }
+
             & * {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                              user-select: none; /* Non-prefixed version, currently
+                                                    supported by Chrome, Edge, Opera and Firefox */
             }
         }
     }
