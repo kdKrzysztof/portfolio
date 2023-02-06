@@ -58,12 +58,9 @@ $focus-color: #00747C;
             }
         }
         & .rightSide {
-            & div {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-            }
+            display: flex;
             align-items: center;
+            justify-content: center;
             width: 50%;
             height: 100%;
             margin-left: 10%;
