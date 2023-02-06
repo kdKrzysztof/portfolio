@@ -31,12 +31,14 @@
 
 import Header from './Header';
 import Footer from './Footer';
+import LanguageContext from './LanguageContext';
 
 import Head from 'next/head';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
 import styles from '../styles/Article.module.scss';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const variants = {
@@ -53,6 +55,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const Router = useRouter();
 
+  const [lang, setLang] = useState<string>('en');
+
   return (
     <>
       <Head>
@@ -62,20 +66,22 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="iconDASDHASDa" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <Header />
-        <AnimatePresence mode="wait">
-          <motion.main
-            key={Router.route}
-            variants={variants}
-            initial="initial"
-            animate="animate"
-            exit="exit">
-            {children}
-          </motion.main>
-        </AnimatePresence>
-        <Footer />
-      </main>
+      <LanguageContext.Provider value={{ lang: lang }}>
+        <main className={styles.main}>
+          <Header setLang={setLang} />
+          <AnimatePresence mode="wait">
+            <motion.main
+              key={Router.route}
+              variants={variants}
+              initial="initial"
+              animate="animate"
+              exit="exit">
+              {children}
+            </motion.main>
+          </AnimatePresence>
+          <Footer />
+        </main>
+      </LanguageContext.Provider>
     </>
   );
 }

@@ -9,28 +9,34 @@ import FolderSpecialSharpIcon from '@mui/icons-material/FolderSpecialSharp';
 import Link from 'next/link';
 
 const RightText = styled.div`
-  border: '1px solid',
-  bordercolor: '#00ADB5',
-  outline: 1px,
-  display: flex,
-  flex-direction: column,
+border: '1px solid',
+bordercolor: '#00ADB5',
+outline: 1px,
+display: flex,
+flex-direction: column,
 `;
 
+import LanguageContext from '@/components/LanguageContext';
+import Translation from '@/components/Translation';
+
 const About = () => {
+  const { lang } = React.useContext(LanguageContext);
+
+  React.useEffect(() => {
+    console.log(lang);
+  }, [lang]);
+
+  let selectedLanguage = Translation.language[lang as keyof typeof Translation.language];
+
   return (
     <div className={styles.main}>
       <div className={styles.content}>
         <div className={styles.leftSide}>
           <Typography variant="h4" color="#00ADB5" className={styles.Title}>
-            About me
+            {selectedLanguage.About.Title1}
           </Typography>
           <Typography variant="subtitle1" color="white">
-            Eu id laboris sit dolor irure cupidatat laborum et voluptate non anim anim laborum
-            aliqua. Do voluptate anim enim voluptate officia ut ad. Sunt incididunt ut nisi mollit
-            magna dolor commodo elit. Reprehenderit ea sint qui nisi aliquip velit aliqua consequat
-            enim dolore. In consequat irure cupidatat voluptate ex labore sit aliquip ad ex nulla
-            dolore elit pariatur. Pariatur mollit elit labore dolor voluptate non velit cupidatat
-            aliquip culpa ullamco magna laboris. Sint sit reprehenderit aute ut.
+            {selectedLanguage.About.AboutMeDesc}
           </Typography>
         </div>
         <div className={styles.rightSide}>
@@ -41,10 +47,11 @@ const About = () => {
                   variant="h6"
                   color="#00ADB5"
                   sx={{ display: 'flex', alignItems: 'center' }}>
-                  <SchoolSharpIcon sx={{ marginRight: '1rem' }} /> Education
+                  <SchoolSharpIcon sx={{ marginRight: '1rem' }} />
+                  {selectedLanguage.About.Education}
                 </Typography>
                 <Typography variant="subtitle2" color="white">
-                  Eu id laboris sit dolor irure cupidatat laborum et voluptate non anim
+                  {selectedLanguage.About.EduDesc}
                 </Typography>
               </RightText>
             </Grid>
@@ -54,10 +61,10 @@ const About = () => {
                 color="#00ADB5"
                 sx={{ display: 'flex', alignItems: 'center' }}>
                 <WorkHistorySharpIcon sx={{ marginRight: '1rem' }} />
-                Work Experience
+                {selectedLanguage.About.WorkExp}
               </Typography>
               <Typography variant="subtitle2" color="white">
-                Eu id laboris sit dolor irure cupidatat laborum et voluptate non anim
+                {selectedLanguage.About.WorkExpDesc}
               </Typography>
             </Grid>
             <Grid item>
@@ -70,11 +77,11 @@ const About = () => {
                 }}>
                 <FolderSpecialSharpIcon sx={{ marginRight: '1rem' }} />
                 <Link href="/Portfolio" style={{ textDecoration: 'none', color: '#00ADB5' }}>
-                  Personal Work
+                  {selectedLanguage.About.Portfolio}
                 </Link>
               </Typography>
               <Typography variant="subtitle2" color="white">
-                Eu id laboris sit dolor irure cupidatat laborum et voluptate non anim
+                {selectedLanguage.About.PortfolioDesc}
               </Typography>
             </Grid>
           </Grid>

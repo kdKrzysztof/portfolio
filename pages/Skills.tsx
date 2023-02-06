@@ -54,7 +54,17 @@ const container = {
   }
 };
 
+import LanguageContext from '@/components/LanguageContext';
+import Translation from '@/components/Translation';
+
 const Skills = () => {
+  const { lang } = React.useContext(LanguageContext);
+  let selectedLanguage = Translation.language[lang as keyof typeof Translation.language];
+
+  React.useEffect(() => {
+    console.log(lang);
+  }, [lang]);
+
   return (
     <div className={styles.main}>
       <div className={styles.content}>
@@ -63,14 +73,14 @@ const Skills = () => {
             variant="h4"
             color="#00ADB5"
             className={[styles.Title, styles.noselect].join(' ')}>
-            My Skills
+            {selectedLanguage.MySkills.Title1}
           </Typography>
           <Typography
             variant="subtitle1"
             color="white"
             className={styles.noselect}
             style={poppins.style}>
-            {`I've worked with these technologies:`}
+            {selectedLanguage.MySkills.subtitle1}
           </Typography>
         </motion.div>
         <motion.div
@@ -79,7 +89,9 @@ const Skills = () => {
           animate="visible"
           className={styles.rightSide}>
           {skillsObj.map((index: any) => {
-            return <Skill key={index} ImageURL={index.imageURL} SkillName={index.skillName} />;
+            return (
+              <Skill key={index.skillName} ImageURL={index.imageURL} SkillName={index.skillName} />
+            );
           })}
           ;
         </motion.div>
@@ -105,4 +117,4 @@ export default Skills;
 <Skill ImageURL={MYSQLlogo} SkillName="MySQL" />
 <Skill ImageURL={MARIADBlogo} SkillName="MariaDB" />
 <Skill ImageURL={SEQUELIZElogo} SkillName="Sequelize" /> */
-}
+} // before used this
