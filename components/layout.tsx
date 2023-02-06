@@ -29,7 +29,7 @@
 //   )
 // }
 
-import Header from './Navbar';
+import Navbar from './Navbar';
 import Footer from './Footer';
 import LanguageContext from './LanguageContext';
 
@@ -67,7 +67,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <link rel="iconDASDHASDa" href="/favicon.ico" />
       </Head>
       <LanguageContext.Provider value={{ lang: lang }}>
-        <Header setLang={setLang} />
+        <Navbar setLang={setLang} />
         <AnimatePresence mode="wait">
           <motion.main
             key={Router.route}

@@ -58,7 +58,7 @@ const Header = (props: any) => {
   };
 
   return (
-    <div className={styles.main}>
+    <header className={styles.main}>
       <div>
         <Button variant="text" size="small" sx={{ visibility: 'hidden' }}></Button>
         <p className={merriweather.className}>{`Portfolio`}</p>
@@ -84,7 +84,7 @@ const Header = (props: any) => {
             className={styles.selectLanguageImage}></Image>
         </Button>
       </span>
-    </div>
+    </header>
   );
 };
 
