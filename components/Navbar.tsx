@@ -26,35 +26,17 @@ const poppins = Poppins({
   subsets: ['latin']
 });
 
-import LanguageContext from '@/components/LanguageContext';
-import Translation from '@/components/Translation';
+import getLanguage from '@/components/GetLanguage';
 
 const Header = (props: any) => {
   const [showMenu, setShowMenu] = useState(false);
   const [openLang, setOpenLang] = useState(false);
 
-  const { lang } = React.useContext(LanguageContext);
-
-  React.useEffect(() => {
-    console.log(lang);
-  }, [lang]);
-
-  let selectedLanguage = Translation.language[lang as keyof typeof Translation.language];
+  let selectedLanguage = getLanguage();
 
   const onClickLang = (): any => {
     setOpenLang(!openLang);
-
-    switch (openLang) {
-      case false:
-        props.setLang('pl');
-        break;
-      case true:
-        props.setLang('en');
-        break;
-      default:
-        setOpenLang(false);
-        props.setLang('en');
-    }
+    openLang ? props.setLang('en') : props.setLang('pl');
   };
 
   return (

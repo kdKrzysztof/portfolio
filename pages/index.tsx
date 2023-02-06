@@ -2,16 +2,10 @@ import styles from '@/styles/Home.module.scss';
 import React from 'react';
 import { Button, Typography } from '@mui/material';
 
-import LanguageContext from '@/components/LanguageContext';
-import Translation from '@/components/Translation';
+import getLanguage from '@/components/GetLanguage';
 
 const Contact = () => {
-  const { lang } = React.useContext(LanguageContext);
-  let selectedLanguage = Translation.language[lang as keyof typeof Translation.language];
-
-  React.useEffect(() => {
-    console.log(lang);
-  }, [lang]);
+  let selectedLanguage = getLanguage();  
 
   return (
     <div className={styles.main}>

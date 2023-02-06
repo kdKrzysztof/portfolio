@@ -16,17 +16,10 @@ display: flex,
 flex-direction: column,
 `;
 
-import LanguageContext from '@/components/LanguageContext';
-import Translation from '@/components/Translation';
+import getLanguage from '@/components/GetLanguage';
 
 const About = () => {
-  const { lang } = React.useContext(LanguageContext);
-
-  React.useEffect(() => {
-    console.log(lang);
-  }, [lang]);
-
-  let selectedLanguage = Translation.language[lang as keyof typeof Translation.language];
+  let selectedLanguage = getLanguage();
 
   return (
     <div className={styles.main}>

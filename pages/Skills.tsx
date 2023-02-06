@@ -54,16 +54,10 @@ const container = {
   }
 };
 
-import LanguageContext from '@/components/LanguageContext';
-import Translation from '@/components/Translation';
+import getLanguage from '@/components/GetLanguage';
 
 const Skills = () => {
-  const { lang } = React.useContext(LanguageContext);
-  let selectedLanguage = Translation.language[lang as keyof typeof Translation.language];
-
-  React.useEffect(() => {
-    console.log(lang);
-  }, [lang]);
+  let selectedLanguage = getLanguage();
 
   return (
     <div className={styles.main}>
