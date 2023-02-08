@@ -1,0 +1,115 @@
+$base-color: #00ADB5;
+$focus-color: #00747C;
+$skill-background-color: #171b20;
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+                  user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+
+    
+    & .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        & .leftSide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        & .rightSide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 2rem;
+            width: 70%;
+            height: auto;
+            flex-wrap: wrap;
+
+            @media screen and (max-width: 772px) {
+                width: 100%;
+            }
+
+            & * {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                              user-select: none; /* Non-prefixed version, currently
+                                                    supported by Chrome, Edge, Opera and Firefox */
+            }
+        }
+    }
+}
+
+.Title{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    // margin-left: 1rem;
+    margin-bottom: .5rem;
+    width: 100%;
+
+    @media screen and (max-width: 375px) {
+        font-size: 100%;
+    }
+
+    &::before {
+        content: "";
+        width: 30%;
+        margin-right: 2%;
+        height: 1px;
+        background-color: $focus-color;
+        @media screen and (max-width: 375px) {
+            margin-right: 5%;
+        }
+    }
+    
+    &::after {
+        content: "";
+        width: 30%;
+        margin-left: 2%;
+        height: 1px;
+        background-color: $focus-color;
+        // transition: width 400ms 0 200ms;
+
+        @media screen and (max-width: 375px) {
+            margin-left: 5%;
+        }
+    }
+}
+
+.SkillImage{
+    max-width: 50%;
+    object-fit: contain;
+}

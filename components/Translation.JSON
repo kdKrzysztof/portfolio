@@ -28,7 +28,10 @@
       },
       "MySkills": {
         "Title1": "Umiejętności",
-        "subtitle1": "Pracowałem z tymi technologiami:"
+        "subtitle1": "Pracowałem z tymi technologiami"
+      },
+      "MyWork": {
+        "Title1": "Moje projekty"
       }
     },
 
@@ -60,6 +63,9 @@
       "MySkills": {
         "Title1": "My Skills",
         "subtitle1": "I've worked with these technologies:"
+      },
+      "MyWork": {
+        "Title1": "My projects"
       }
     }
   }
