@@ -19,7 +19,6 @@ $skill-background-color: #171b20;
     flex-direction: column;
     width: 100vw;
     height: auto;
-
     
     & .content {
         display: flex;
@@ -38,33 +37,13 @@ $skill-background-color: #171b20;
             flex-direction: column;
             width: 100%;
         }
-
+         
         & .rightSide {
             display: flex;
             justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            margin-top: 2rem;
-            width: 70%;
-            height: auto;
             flex-wrap: wrap;
-
-            @media screen and (max-width: 772px) {
-                width: 100%;
-            }
-
-            & * {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                -webkit-touch-callout: none; /* iOS Safari */
-                -webkit-user-select: none; /* Safari */
-                -khtml-user-select: none; /* Konqueror HTML */
-                -moz-user-select: none; /* Old versions of Firefox */
-                -ms-user-select: none; /* Internet Explorer/Edge */
-                              user-select: none; /* Non-prefixed version, currently
-                                                    supported by Chrome, Edge, Opera and Firefox */
-            }
+            width: 80%;
+            height: auto;
         }
     }
 }
@@ -77,12 +56,8 @@ $skill-background-color: #171b20;
     overflow: hidden;
     position: relative;
     // margin-left: 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
     width: 100%;
-
-    @media screen and (max-width: 375px) {
-        font-size: 100%;
-    }
 
     &::before {
         content: "";
@@ -90,8 +65,9 @@ $skill-background-color: #171b20;
         margin-right: 2%;
         height: 1px;
         background-color: $focus-color;
-        @media screen and (max-width: 375px) {
-            margin-right: 5%;
+
+        @media screen and (max-width: 500px) {
+            display: none;
         }
     }
     
@@ -103,13 +79,43 @@ $skill-background-color: #171b20;
         background-color: $focus-color;
         // transition: width 400ms 0 200ms;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 500px) {
             margin-left: 5%;
+        }
+
+    }
+}
+
+.projectContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1.5rem;
+    width: 20rem;
+    color: white;
+    background-color:#4adce409;
+    border-radius: .5rem;
+    overflow: hidden;
+    
+    & :hover {
+        & .projectImage{
+            opacity: 100%;
         }
     }
 }
 
-.SkillImage{
-    max-width: 50%;
-    object-fit: contain;
+.imageContainer{
+    display: flex;
+    max-width: 100%;
+    max-height: 45%;
+    background-color: #00747C;
+}
+
+.projectImage{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    opacity: 70%;
+    transition: opacity 200ms;
 }

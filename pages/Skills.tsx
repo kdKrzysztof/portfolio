@@ -48,8 +48,8 @@ const skillsObj: any = [
 const container = {
   visible: {
     transition: {
-      delayChildren: 0.2,
-      staggerChildren: 0.2
+      delayChildren: 0.05,
+      staggerChildren: 0.05
     }
   }
 };
@@ -87,7 +87,6 @@ const Skills = () => {
               <Skill key={index.skillName} ImageURL={index.imageURL} SkillName={index.skillName} />
             );
           })}
-          ;
         </motion.div>
       </div>
     </div>

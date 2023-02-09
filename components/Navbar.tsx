@@ -40,7 +40,7 @@ const Header = (props: any) => {
   };
 
   return (
-    <header className={styles.main}>
+    <header className={styles.navbarContainer}>
       <div>
         <Button variant="text" size="small" sx={{ visibility: 'hidden' }}></Button>
         <p className={merriweather.className}>{`Portfolio`}</p>

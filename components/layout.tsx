@@ -37,7 +37,6 @@ import Head from 'next/head';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
 import styles from '../styles/Article.module.scss';
-import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -74,7 +73,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             variants={variants}
             initial="initial"
             animate="animate"
-            exit="exit">
+            exit="exit"
+            className={styles.motionMain}
+            >
             {children}
           </motion.main>
         </AnimatePresence>

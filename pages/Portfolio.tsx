@@ -4,8 +4,25 @@ import styles from '@/styles/Portfolio.module.scss';
 import { motion } from 'framer-motion';
 import { Typography } from '@mui/material';
 
-import { Poppins } from '@next/font/google';
+import Project from '@/components/Project';
+import bpdiscordbot from '@/public/projects/bpdiscordbot.png';
 
+const projectsObj: any = [
+  {
+    imageURL: bpdiscordbot,
+    projectName: 'Buildaverse Clothing Previewer'
+  },
+  {
+    imageURL: bpdiscordbot,
+    projectName: 'Buildaverse Clothing Previewer'
+  },
+  {
+    imageURL: bpdiscordbot,
+    projectName: 'Buildaverse Clothing Previewer'
+  }
+];
+
+import { Poppins } from '@next/font/google';
 const poppins = Poppins({
   weight: '400',
   subsets: ['latin']
@@ -38,11 +55,15 @@ const Portfolio = () => {
           initial="hidden"
           animate="visible"
           className={styles.rightSide}>
-          {/* {skillsObj.map((index: any) => {
+          {projectsObj.map((index: any) => {
             return (
-              <Skill key={index.skillName} ImageURL={index.imageURL} SkillName={index.skillName} />
+              <Project
+                key={index.projectName}
+                ImageURL={index.imageURL}
+                SkillName={index.projectName}
+              />
             );
-          })} */}
+          })}
           ;
         </motion.div>
       </div>

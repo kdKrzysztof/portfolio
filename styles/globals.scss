@@ -111,14 +111,6 @@ $global-background-color: #171c22;
     background-color: $global-background-color;
 }
 
-#__next {
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 input[type='number'] {
     -moz-appearance:textfield;
 }
@@ -129,9 +121,12 @@ input::-webkit-inner-spin-button {
 }
 
 body {
+    box-sizing: border-box;
     height: 100vh;
-    width: 100vw;
+    width: 100vw; 
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
