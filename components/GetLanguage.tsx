@@ -1,13 +1,13 @@
 import React from 'react';
 
 import LanguageContext from '@/components/LanguageContext';
-import Translation from '@/components/Translation.json';
+import {Translation} from '@/components/Translation';
 
 const GetLanguage = () => {
   const { lang } = React.useContext(LanguageContext);
   let selectedLanguage = Translation.language[lang as keyof typeof Translation.language];
 
-  return selectedLanguage
+  return selectedLanguage;
 };
 
 export default GetLanguage;
