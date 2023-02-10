@@ -10,15 +10,18 @@ import bpdiscordbot from '@/public/projects/bpdiscordbot.png';
 const projectsObj: any = [
   {
     imageURL: bpdiscordbot,
-    projectName: 'Buildaverse Clothing Previewer'
+    projectName: 'Brickplanet Discord Bot',
+    techStack: {}
   },
   {
     imageURL: bpdiscordbot,
-    projectName: 'Buildaverse Clothing Previewer'
+    projectName: 'Buildaverse Clothing Previewer',
+    techStack: {}
   },
   {
     imageURL: bpdiscordbot,
-    projectName: 'Buildaverse Clothing Previewer'
+    projectName: 'Buildaverse Clothing Previewer',
+    techStack: {}
   }
 ];
 
@@ -60,7 +63,7 @@ const Portfolio = () => {
               <Project
                 key={index.projectName}
                 ImageURL={index.imageURL}
-                SkillName={index.projectName}
+                ProjectName={index.projectName}
               />
             );
           })}

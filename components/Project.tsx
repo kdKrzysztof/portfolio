@@ -25,12 +25,14 @@ const item = {
 
 const Project = (props: any) => {
   return (
-    <motion.div variants={item} className={styles.projectContent}>
-      <div className={styles.imageContainer}>
-        <Image src={props.ImageURL} alt="" className={styles.projectImage} />
+    <motion.div
+      variants={item}
+      className={styles.projectComponentContainer}>
+      <div className={styles.projectComponentImageContainer}>
+        <Image src={props.ImageURL} alt="" className={styles.projectComponentImage} />
       </div>
-      <Typography variant="subtitle1" style={poppins.style}>
-        adshkjlfahksjdlfgklajgfksgdakfg
+      <Typography variant="h5" style={poppins.style}>
+        {props.ProjectName}
       </Typography>
       <Typography variant="subtitle1" style={poppins.style}>
         adshkjlfahksjdlfgklajgfksgdakfg
