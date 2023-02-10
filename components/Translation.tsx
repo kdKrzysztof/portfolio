@@ -34,7 +34,11 @@ export const Translation = {
         subtitle1: 'Pracowałem z tymi technologiami:'
       },
       MyWork: {
-        Title1: 'Moje Projekty'
+        Title1: 'Moje Projekty',
+        Project1:
+          'project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc',
+        Project2:
+          'project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc'
       }
     },
 
@@ -72,7 +76,11 @@ export const Translation = {
         subtitle1: `I've worked with these technologies:`
       },
       MyWork: {
-        Title1: 'My Projects'
+        Title1: 'My Projects',
+        Project1:
+          'project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc',
+        Project2:
+          'project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc'
       }
     }
   }

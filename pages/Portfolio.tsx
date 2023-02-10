@@ -7,24 +7,6 @@ import { Typography } from '@mui/material';
 import Project from '@/components/Project';
 import bpdiscordbot from '@/public/projects/bpdiscordbot.png';
 
-const projectsObj: any = [
-  {
-    imageURL: bpdiscordbot,
-    projectName: 'Brickplanet Discord Bot',
-    techStack: {}
-  },
-  {
-    imageURL: bpdiscordbot,
-    projectName: 'Buildaverse Clothing Previewer',
-    techStack: {}
-  },
-  {
-    imageURL: bpdiscordbot,
-    projectName: 'Buildaverse Clothing Previewer',
-    techStack: {}
-  }
-];
-
 import { Poppins } from '@next/font/google';
 const poppins = Poppins({
   weight: '400',
@@ -42,6 +24,22 @@ const container = {
 
 const Portfolio = () => {
   let selectedLanguage = getLanguage();
+
+  const projectsObj: any = [
+    {
+      imageURL: bpdiscordbot,
+      projectName: 'Brickplanet Discord Bot',
+      projectDesc: selectedLanguage.MyWork.Project1,
+      techStack: {}
+    },
+    {
+      imageURL: bpdiscordbot,
+      projectName: 'Buildaverse Clothing Previewer',
+      projectDesc: selectedLanguage.MyWork.Project2,
+      techStack: {}
+    }
+  ];
+
   return (
     <div className={styles.main}>
       <div className={styles.content}>
@@ -64,6 +62,7 @@ const Portfolio = () => {
                 key={index.projectName}
                 ImageURL={index.imageURL}
                 ProjectName={index.projectName}
+                ProjectDesc={index.projectDesc}
               />
             );
           })}
