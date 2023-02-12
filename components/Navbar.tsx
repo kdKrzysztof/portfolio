@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 // import styles from '../styles/Header.module.scss'
 import styles from '../styles/Header.module.scss';
 import { Roboto, Merriweather, Poppins } from '@next/font/google';
@@ -28,7 +28,7 @@ const poppins = Poppins({
 
 import getLanguage from '@/components/GetLanguage';
 
-const Header = (props: any) => {
+const Header: FC<any> = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [openLang, setOpenLang] = useState(false);
 

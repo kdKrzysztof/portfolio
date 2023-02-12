@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import { Typography, Box, Grid } from '@mui/material';
 import styles from '../styles/Portfolio.module.scss';
@@ -25,7 +25,7 @@ const item = {
 
 import getLanguage from '@/components/GetLanguage';
 
-const Project = (props: any) => {
+const Project: FC<any> = (props) => {
   let selectedLanguage = getLanguage();
 
   return (
@@ -55,7 +55,7 @@ const Project = (props: any) => {
         {props.ProjectName}
       </Typography>
       <Typography
-        variant="subtitle1"
+        variant="body2"
         style={poppins.style}
         sx={{
           display: 'flex',
@@ -63,6 +63,7 @@ const Project = (props: any) => {
           justifyContent: 'center',
           alignItems: 'center',
           position: 'relative',
+          width: '15rem',
           '::after': {
             content: '""',
             width: '15rem',
@@ -74,8 +75,11 @@ const Project = (props: any) => {
         }}>
         {props.ProjectDesc}
       </Typography>
-      <Typography variant="h6" style={poppins.style} sx={{}}>
+      <Typography variant="h6" style={poppins.style}>
         Tech stack:
+      </Typography>
+      <Typography variant="body2" style={poppins.style} sx={{ width: '15rem' }}>
+        {props.ProjectTechstack}
       </Typography>
     </motion.div>
   );

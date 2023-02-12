@@ -30,13 +30,15 @@ const Portfolio = () => {
       imageURL: bpdiscordbot,
       projectName: 'Brickplanet Discord Bot',
       projectDesc: selectedLanguage.MyWork.Project1,
-      techStack: {}
+      techStack: [
+        `Node.JS, HTML Parser, Discord.JS v12, Express.JS, MongoDBm, Mongoose, etc. [finish techstack later]`
+      ]
     },
     {
       imageURL: bpdiscordbot,
       projectName: 'Buildaverse Clothing Previewer',
       projectDesc: selectedLanguage.MyWork.Project2,
-      techStack: {}
+      techStack: `Node.JS, Express.JS, React, JS, Python(BlenderPY), etc. [finish techstack later]`
     }
   ];
 
@@ -63,6 +65,7 @@ const Portfolio = () => {
                 ImageURL={index.imageURL}
                 ProjectName={index.projectName}
                 ProjectDesc={index.projectDesc}
+                ProjectTechstack={index.techStack}
               />
             );
           })}

@@ -36,9 +36,9 @@ export const Translation = {
       MyWork: {
         Title1: 'Moje Projekty',
         Project1:
-          'project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc',
+          'Sint id ex in dolor est. Qui Lorem sunt voluptate esse consectetur aute tempor aliquip do. Duis officia cillum consequat cupidatat culpa ipsum tempor in officia veniam nisi nisi. Qui nulla nostrud sunt deserunt reprehenderit. Dolor voluptate Lorem deserunt consequat minim dolor voluptate magna duis cillum id. Aute esse eiusmod ipsum sunt magna qui dolor culpa.',
         Project2:
-          'project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc'
+          'Anim qui cupidatat pariatur amet. Amet tempor dolor proident dolor officia duis aliquip occaecat ad Lorem velit. Elit elit incididunt esse ullamco laboris reprehenderit elit cillum ea. Magna do cupidatat dolore adipisicing Lorem excepteur incididunt et dolor. Voluptate non ad occaecat minim ut pariatur aliquip fugiat dolor culpa consectetur ex consectetur.'
       }
     },
 
@@ -78,9 +78,9 @@ export const Translation = {
       MyWork: {
         Title1: 'My Projects',
         Project1:
-          'project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc',
+          'Quis dolore aliquip eiusmod aute consectetur veniam ullamco irure aliqua. Occaecat id ipsum consequat ea nisi esse. Sunt tempor esse occaecat velit deserunt excepteur laborum non ex ad est culpa laboris tempor.',
         Project2:
-          'project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc project desc'
+          'Cillum officia ex quis nostrud ipsum irure cillum enim reprehenderit nulla non elit. Tempor amet ut dolore est. Ipsum nostrud nostrud magna nostrud laboris.'
       }
     }
   }

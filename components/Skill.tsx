@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import { Typography, Box, Grid } from '@mui/material';
 import styles from '../styles/Skills.module.scss';
@@ -29,7 +29,7 @@ const item = {
   }
 };
 
-const Skill = (props: any) => {
+const Skill: FC<any> = (props) => {
   return (
     <motion.div variants={item}>
       <Box
