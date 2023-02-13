@@ -43,9 +43,10 @@ const Project: FC<any> = (props) => {
           alignItems: 'center',
           position: 'relative',
           marginTop: '1rem',
+          width: '18rem',
           '::after': {
             content: '""',
-            width: '15rem',
+            width: '17rem',
             height: '1px',
             marginTop: '1rem',
             marginBottom: '1rem',
@@ -63,10 +64,10 @@ const Project: FC<any> = (props) => {
           justifyContent: 'center',
           alignItems: 'center',
           position: 'relative',
-          width: '15rem',
+          width: '17rem',
           '::after': {
             content: '""',
-            width: '15rem',
+            width: '17rem',
             height: '1px',
             marginTop: '1rem',
             marginBottom: '1rem',
@@ -78,7 +79,7 @@ const Project: FC<any> = (props) => {
       <Typography variant="h6" style={poppins.style}>
         Tech stack:
       </Typography>
-      <Typography variant="body2" style={poppins.style} sx={{ width: '15rem' }}>
+      <Typography variant="body2" style={poppins.style} sx={{ width: '17rem' }}>
         {props.ProjectTechstack}
       </Typography>
     </motion.div>
