@@ -42,7 +42,7 @@ $skill-background-color: #171b20;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            width: 80%;
+            width: 100%;
             height: auto;
         }
     }
@@ -101,6 +101,11 @@ $skill-background-color: #171b20;
     background-color:#4adce409;
     border-radius: .5rem;
     overflow: hidden;
+
+    & button {
+        border-color: #00ADB5;
+        color: #00ADB5;
+    }
 }
 
 .projectComponentContainer:hover{

@@ -59,9 +59,11 @@ const Header: FC<any> = (props) => {
         <Link href="/Skills">{selectedLanguage.Header.Skills}</Link>
         <Link href="/Portfolio">{selectedLanguage.Header.Work}</Link>
         <Link href="/Contact">{selectedLanguage.Header.Contact}</Link>
-        <Button onClick={onClickLang}>
+        <Button
+          onClick={onClickLang}
+          sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <Image
-            src={openLang ? PolishFlag : EnglishFlag}
+            src={openLang ? EnglishFlag : PolishFlag}
             alt=""
             className={styles.selectLanguageImage}></Image>
         </Button>

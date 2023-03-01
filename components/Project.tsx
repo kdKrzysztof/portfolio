@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { Typography, Box, Grid } from '@mui/material';
+import { Typography, Box, Grid, Button } from '@mui/material';
 import styles from '../styles/Portfolio.module.scss';
 import Image from 'next/image';
 import { Roboto, Merriweather, Poppins } from '@next/font/google';
@@ -79,9 +79,35 @@ const Project: FC<any> = (props) => {
       <Typography variant="h6" style={poppins.style}>
         Tech stack:
       </Typography>
-      <Typography variant="body2" style={poppins.style} sx={{ width: '17rem' }}>
+      <Typography
+        variant="body2"
+        style={poppins.style}
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          position: 'relative',
+          width: '17rem',
+          '::after': {
+            content: '""',
+            width: '17rem',
+            height: '1px',
+            marginTop: '1rem',
+            marginBottom: '1rem',
+            backgroundColor: '#00747C'
+          }
+        }}>
         {props.ProjectTechstack}
       </Typography>
+      <div className={styles.buttonContainer}>
+        <Button variant="outlined" size="medium">
+          {selectedLanguage.MyWork.Button1}
+        </Button>
+        <Button variant="outlined" size="medium" sx={{ marginLeft: '1rem' }}>
+          {selectedLanguage.MyWork.Button2}
+        </Button>
+      </div>
     </motion.div>
   );
 };

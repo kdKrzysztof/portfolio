@@ -3,7 +3,6 @@ import getLanguage from '@/components/GetLanguage';
 import styles from '@/styles/Portfolio.module.scss';
 import { motion } from 'framer-motion';
 import { Typography } from '@mui/material';
-import Slider from 'react-slick';
 
 import Project from '@/components/Project';
 import bpdiscordbot from '@/public/projects/bpdiscordbot.png';
@@ -43,13 +42,6 @@ const Portfolio = () => {
     }
   ];
 
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 0
-  };
   return (
     <div className={styles.main}>
       <div className={styles.content}>
