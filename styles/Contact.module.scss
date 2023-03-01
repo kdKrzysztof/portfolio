@@ -8,86 +8,69 @@ $focus-color: #00747C;
     flex-direction: column;
     width: 100vw;
     height: auto;
-
-    
-    & .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        width: 60%;
-        height: 100%;
-        
-        @media screen and (max-width: 705px) {
-            flex-direction: column;
-            width: 100%;
-            margin-top: 10%;
-            margin-bottom: 10%;
-        }
-
-        @media screen and (max-width: 1506px) {
-            width: 65%;
-        }
-
-        @media screen and (max-width: 1250px) {
-            width: 70%;
-        }
-
-        @media screen and (max-width: 1045px) {
-           width: 80%; 
-        }
-
-
-        & .leftSide {
-            display: flex;
-            justify-content: flex-start;
-            flex-direction: column;
-            width: 50%;
-
-            @media  screen and (max-width: 705px) {
-                width: 70%;
-            }
-
-            & h6 {
-                display: flex;
-                align-items:flex-start;
-                justify-content: flex-start;
-                flex-direction: column;
-                position: relative;
-                margin-top: 1rem; //been using these options for ::after
-            }
-        }
-        & .rightSide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50%;
-            height: 100%;
-            margin-left: 10%;
-
-            @media screen and (max-width: 705px) {
-                flex-direction: column;
-                width: 70%;
-                margin-left: 0;
-                margin-top: 3rem;
-            }
-        }
-    }
 }
 
-.Title{
+.mainTop{
     display: flex;
     align-items:center;
+    justify-content: center;
     flex-direction: row;
     overflow: hidden;
     position: relative;
     // margin-left: 1rem;
-    &::after {
-        position: absolute;
-        margin-left: 10rem;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    &::before {
         content: "";
-        width: 100%;
+        width: 30%;
+        margin-right: 2%;
         height: 1px;
         background-color: $focus-color;
+
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
+    }
+    
+    &::after {
+        content: "";
+        width: 30%;
+        margin-left: 2%;
+        height: 1px;
+        background-color: $focus-color;
+        // transition: width 400ms 0 200ms;
+
+        @media screen and (max-width: 500px) {
+            margin-left: 5%;
+        }
+
+    }
+}
+
+.mainBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    flex-wrap: wrap;
+
+    & .ContactContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & * {
+            margin-bottom: .5rem;
+        }
+
+        color: white;
+        padding: 1rem;
+        margin: 1rem;
+        border: 1px solid $base-color;
+        border-radius: 1rem;
     }
 }
