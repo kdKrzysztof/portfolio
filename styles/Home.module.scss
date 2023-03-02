@@ -6,7 +6,9 @@
     width: 100vw;
     height: 80vh;
     color: white;
-
+    * {
+        text-decoration: none;
+    };
     & div {
         z-index: 2;
     }

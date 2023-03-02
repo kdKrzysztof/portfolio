@@ -7,6 +7,7 @@ import ContactType from '@/components/ContactOption';
 
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import MessageIcon from '@mui/icons-material/Message';
 
 const RightText = styled.div`
 border: '1px solid',
@@ -30,15 +31,18 @@ const Contact = () => {
         <ContactType
           ContactName={'E-mail'}
           ContactData={'example@examp.com'}
-          ImageIcon={<EmailIcon sx={{ fontSize: '2rem' }}/>}
+          ImageIcon={<EmailIcon sx={{ fontSize: '2rem' }} />}
         />
         <ContactType
           ContactName={'LinkedIn'}
           ContactData={'https://pl.linkedin.com/'}
           ImageIcon={<LinkedInIcon sx={{ fontSize: '2rem' }} />}
         />
-        <ContactType ImageIcon={<EmailIcon />} />
-        <ContactType ImageIcon={<EmailIcon />} />
+        <ContactType
+          ContactName={'Messenger'}
+          ContactData={'m.me/x2x823x121'}
+          ImageIcon={<MessageIcon sx={{ fontSize: '2rem' }} />}
+        />
       </div>
     </div>
   );

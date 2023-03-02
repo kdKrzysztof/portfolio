@@ -1,34 +1,3 @@
-// import Header from './Header'
-// import Head from '../../../failedProject/portfolio/pages/head'
-// import styles from '../styles/Article.module.scss'
-
-// import React, { useEffect, useState } from 'react'
-// import router from 'next/router'
-// import { Collapse } from '@mui/material'
-// import Fade from '@mui/material/Fade'
-
-// export default function RootLayout({
-//   children,
-// }: {
-//   children: React.ReactNode
-// }) {
-//   // const [isLoading, setIsLoading] = useState(false)
-//   // useEffect(() => {
-
-//   //   router.events.on("routeChangeStart", () => {
-//   //     setIsLoading(true)
-//   //     console.log(isLoading)
-//   //   })
-//   // }, [])
-//   // router.events.on("routeChangeError", () => setIsLoading(false))
-//   // router.events.on("routeChangeComplete", () => setIsLoading(false))
-
-//   return (
-//     <html>
-//     </html>
-//   )
-// }
-
 import Navbar from './Navbar';
 import Footer from './Footer';
 import LanguageContext from './LanguageContext';
@@ -73,9 +42,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             variants={variants}
             initial="initial"
             animate="animate"
-            exit="exit"
-            className={styles.motionMain}
-            >
+            exit="exit">
             {children}
           </motion.main>
         </AnimatePresence>

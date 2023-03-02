@@ -7,7 +7,8 @@ $focus-color: #00747C;
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .mainTop{
@@ -20,6 +21,9 @@ $focus-color: #00747C;
     // margin-left: 1rem;
     margin-bottom: 2rem;
     width: 100%;
+    @media screen and (max-width: 530px) {
+        flex-direction: column;
+    }
 
     &::before {
         content: "";
@@ -28,7 +32,7 @@ $focus-color: #00747C;
         height: 1px;
         background-color: $focus-color;
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 530px) {
             display: none;
         }
     }
@@ -39,10 +43,11 @@ $focus-color: #00747C;
         margin-left: 2%;
         height: 1px;
         background-color: $focus-color;
-        // transition: width 400ms 0 200ms;
 
-        @media screen and (max-width: 500px) {
-            margin-left: 5%;
+        @media screen and (max-width: 530px) {
+            margin-top: 0.4rem;
+            width: 13rem;
+            margin-left: 0%;
         }
 
     }
@@ -56,12 +61,15 @@ $focus-color: #00747C;
     width: 100vw;
     height: auto;
     flex-wrap: wrap;
-
+    @media screen and (max-width: 680px) { 
+        width: 50vw;
+    }
     & .ContactContainer{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-width: 10rem;
 
         & * {
             margin-bottom: .5rem;
