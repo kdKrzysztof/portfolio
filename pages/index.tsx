@@ -21,11 +21,9 @@ const Contact = () => {
           <Button variant="outlined" size="medium">
             {selectedLanguage.Home.button1}
           </Button>
-          <Link href="/Contact">
-            <Button variant="outlined" size="medium">
-              {selectedLanguage.Home.button2}
-            </Button>
-          </Link>
+          <Button variant="outlined" size="medium">
+            <Link href="/Contact">{selectedLanguage.Home.button2}</Link>
+          </Button>
         </div>
       </div>
     </div>

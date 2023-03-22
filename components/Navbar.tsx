@@ -53,7 +53,7 @@ const Header: FC<any> = (props) => {
           <MenuSharpIcon sx={{ display: 'flex', minHeight: '1.8rem' }}></MenuSharpIcon>
         </Button>
       </div>
-      <span className={[styles.buttonsArea, poppins.className, showMenu && styles.show].join(' ')}>
+      <nav className={[styles.buttonsArea, poppins.className, showMenu && styles.show].join(' ')}>
         <Link href="/">{selectedLanguage.Header.Home}</Link>
         <Link href="/About">{selectedLanguage.Header.About}</Link>
         <Link href="/Skills">{selectedLanguage.Header.Skills}</Link>
@@ -67,7 +67,7 @@ const Header: FC<any> = (props) => {
             alt=""
             className={styles.selectLanguageImage}></Image>
         </Button>
-      </span>
+      </nav>
     </header>
   );
 };
