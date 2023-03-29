@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 import { Typography, Box, Grid, Button } from '@mui/material';
 import styles from '../styles/Portfolio.module.scss';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { Roboto, Merriweather, Poppins } from '@next/font/google';
 import { motion } from 'framer-motion';
 
@@ -23,15 +23,22 @@ const item = {
   }
 };
 
+interface ProjectProps {
+  ImageURL: StaticImageData;
+  ProjectName: string;
+  ProjectDesc: string;
+  children: JSX.Element;
+}
+
 import getLanguage from '@/components/GetLanguage';
 
-const Project: FC<any> = (props) => {
+const Project: FC<ProjectProps> = ({ ImageURL, ProjectName, ProjectDesc, children }) => {
   let selectedLanguage = getLanguage();
 
   return (
     <motion.div variants={item} className={styles.projectComponentContainer}>
       <div className={styles.projectComponentImageContainer}>
-        <Image src={props.ImageURL} alt="" className={styles.projectComponentImage} />
+        <Image src={ImageURL} alt="" className={styles.projectComponentImage} />
       </div>
       <Typography
         variant="h5"
@@ -53,7 +60,7 @@ const Project: FC<any> = (props) => {
             backgroundColor: '#00747C'
           }
         }}>
-        {props.ProjectName}
+        {ProjectName}
       </Typography>
       <Typography
         variant="body2"
@@ -74,21 +81,24 @@ const Project: FC<any> = (props) => {
             backgroundColor: '#00747C'
           }
         }}>
-        {props.ProjectDesc}
+        {ProjectDesc}
       </Typography>
       <Typography variant="h6" style={poppins.style}>
         Tech stack:
       </Typography>
-      <Typography
-        variant="body2"
+      <Box
         style={poppins.style}
         sx={{
           display: 'flex',
-          flexDirection: 'column',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
           justifyContent: 'center',
           alignItems: 'center',
           position: 'relative',
-          width: '17rem',
+          gap: '.4rem',
+          width: '15rem',
+          mt: '1rem',
+          mb: '1rem',
           '::after': {
             content: '""',
             width: '17rem',
@@ -98,8 +108,8 @@ const Project: FC<any> = (props) => {
             backgroundColor: '#00747C'
           }
         }}>
-        {props.ProjectTechstack}
-      </Typography>
+        {children}
+      </Box>
       <div className={styles.buttonContainer}>
         <Button variant="outlined" size="medium">
           {selectedLanguage.MyWork.Button1}

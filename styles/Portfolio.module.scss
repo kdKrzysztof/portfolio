@@ -95,12 +95,12 @@ $skill-background-color: #171b20;
     margin: 1.5rem;
     max-width: 20rem;
     min-width: 18rem;
-    padding-bottom: 1rem;
-    height: auto;
+    padding-bottom: 2rem;
     color: white;
     background-color:#4adce409;
     border-radius: .5rem;
     overflow: hidden;
+    height: 100%;
 
     & button {
         border-color: #00ADB5;
@@ -117,13 +117,12 @@ $skill-background-color: #171b20;
 .projectComponentImageContainer{
     display: flex;
     max-width: 100%;
-    max-height: 10rem;
     background-color: #00747C;
 }
 
 .projectComponentImage{
     max-width: 100%;
-    max-height: 100%;
+    max-height: 10rem;
     object-fit: fill;
     opacity: 70%;
     transition: opacity 200ms;
