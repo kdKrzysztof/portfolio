@@ -7,7 +7,7 @@ const roboto = Roboto_Flex({
   subsets: ['latin']
 });
 
-const Footer: FC<any> = () => {
+const Footer = () => {
   return (
     <div className={[styles.main, roboto.className].join(' ')}>
       Website made by Krzysztof Kudzia

@@ -28,7 +28,11 @@ const poppins = Poppins({
 
 import getLanguage from '@/components/GetLanguage';
 
-const Header: FC<any> = (props) => {
+interface languageType {
+  setLang: Function;
+}
+
+const Header: FC<languageType> = ({ setLang }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [openLang, setOpenLang] = useState(false);
 
@@ -36,7 +40,7 @@ const Header: FC<any> = (props) => {
 
   const onClickLang = (): any => {
     setOpenLang(!openLang);
-    openLang ? props.setLang('en') : props.setLang('pl');
+    openLang ? setLang('en') : setLang('pl');
   };
 
   return (

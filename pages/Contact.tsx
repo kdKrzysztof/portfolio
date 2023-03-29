@@ -17,6 +17,7 @@ display: flex,
 flex-direction: column,
 `;
 
+
 const Contact = () => {
   let selectedLanguage = getLanguage();
 
