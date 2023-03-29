@@ -103,7 +103,8 @@ const Portfolio = () => {
                 </>
               </Project>
             );
-          })};
+          })}
+          ;
         </motion.div>
       </div>
     </div>

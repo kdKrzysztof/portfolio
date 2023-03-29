@@ -56,12 +56,12 @@ $skill-background-color: #171b20;
     overflow: hidden;
     position: relative;
     // margin-left: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     width: 100%;
 
     &::before {
         content: "";
-        width: 30%;
+        width: 40%;
         margin-right: 2%;
         height: 1px;
         background-color: $focus-color;
@@ -73,7 +73,7 @@ $skill-background-color: #171b20;
     
     &::after {
         content: "";
-        width: 30%;
+        width: 40%;
         margin-left: 2%;
         height: 1px;
         background-color: $focus-color;
