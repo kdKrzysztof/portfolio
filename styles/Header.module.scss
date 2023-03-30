@@ -54,7 +54,6 @@ $focus-color: #00747C;
             & button {
                 display: flex;
                 border: 0;
-                margin-left: 2rem;
             }
             justify-content: space-around;
         }
@@ -78,6 +77,7 @@ $focus-color: #00747C;
         flex-direction: column;
         max-width: auto;
         max-height: auto;
+        margin-top: 1rem;
     }
 
     & a {
@@ -117,7 +117,10 @@ $focus-color: #00747C;
         position: sticky;
         flex-direction: column;
         max-height: 0;
-        & * {
+        & a {
+            margin-top: 1rem;
+        }
+        & button {
             margin-top: 1rem;
         }
     }

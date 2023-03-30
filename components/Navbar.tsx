@@ -1,21 +1,17 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import type { Dispatch, FC, SetStateAction} from 'react';
+import type { FC } from 'react';
 // import styles from '../styles/Header.module.scss'
 import styles from '../styles/Header.module.scss';
-import { Roboto, Merriweather, Poppins } from '@next/font/google';
+import { Merriweather, Poppins } from '@next/font/google';
 
-import { Button, Collapse } from '@mui/material';
+import { Button, Grid } from '@mui/material';
 import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 
 import PolishFlag from '../public/polish.png';
 import EnglishFlag from '../public/english.png';
 
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin']
-});
 
 const merriweather = Merriweather({
   weight: '400',
@@ -28,7 +24,7 @@ const poppins = Poppins({
 });
 
 import getLanguage from '@/components/GetLanguage';
-import {languageType} from 'types';
+import { languageType } from 'types';
 
 const Header: FC<languageType> = ({ setLang }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -44,16 +40,22 @@ const Header: FC<languageType> = ({ setLang }) => {
   return (
     <header className={styles.navbarContainer}>
       <div>
-        <Button variant="text" size="small" sx={{ visibility: 'hidden' }}></Button>
-        <p className={merriweather.className}>{`Portfolio`}</p>
-        <Button
-          variant="text"
-          onClick={() => {
-            setShowMenu(!showMenu);
-            console.log(showMenu);
-          }}>
-          <MenuSharpIcon sx={{ display: 'flex', minHeight: '1.8rem' }}></MenuSharpIcon>
-        </Button>
+        <Grid container direction="row" justifyContent="center" alignItems="center">
+          <Grid item xs></Grid>
+          <Grid item xs={6}>
+            <h1 className={merriweather.className}>{`Portfolio`}</h1>
+          </Grid>
+          <Grid item xs>
+            <Button
+              variant="text"
+              onClick={() => {
+                setShowMenu(!showMenu);
+                console.log(showMenu);
+              }}>
+              <MenuSharpIcon sx={{ display: 'flex', minHeight: '1.8rem' }}></MenuSharpIcon>
+            </Button>
+          </Grid>
+        </Grid>
       </div>
       <nav className={[styles.buttonsArea, poppins.className, showMenu && styles.show].join(' ')}>
         <Link href="/">{selectedLanguage.Header.Home}</Link>
