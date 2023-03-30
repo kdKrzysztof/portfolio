@@ -2,15 +2,11 @@ import React, { FC } from 'react';
 
 import { Typography, Box, Grid, Button } from '@mui/material';
 import styles from '../styles/Portfolio.module.scss';
-import Image, { StaticImageData } from 'next/image';
-import { Roboto, Merriweather, Poppins } from '@next/font/google';
+import Image from 'next/image';
+import { Poppins } from '@next/font/google';
 import { motion } from 'framer-motion';
 import {ProjectProps} from 'types';
 
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin']
-});
 
 const poppins = Poppins({
   weight: '300',

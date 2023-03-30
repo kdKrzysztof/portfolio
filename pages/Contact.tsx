@@ -1,5 +1,4 @@
 import { Typography } from '@mui/material';
-import styled from '@emotion/styled';
 import React from 'react';
 import styles from '../styles/Contact.module.scss';
 import getLanguage from '@/components/GetLanguage';
@@ -8,14 +7,6 @@ import ContactType from '@/components/ContactOption';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MessageIcon from '@mui/icons-material/Message';
-
-const RightText = styled.div`
-border: '1px solid',
-bordercolor: '#00ADB5',
-outline: 1px,
-display: flex,
-flex-direction: column,
-`;
 
 
 const Contact = () => {

@@ -2,20 +2,11 @@ import React from 'react';
 import { Typography, Box, Grid } from '@mui/material';
 import styles from '../styles/Skills.module.scss';
 import Image from 'next/image';
-import { Roboto, Merriweather, Poppins } from '@next/font/google';
+import { Poppins } from '@next/font/google';
 import { motion } from 'framer-motion';
 import type { FC } from 'react';
 import { SkillInterface } from 'types';
 
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin']
-});
-
-const merriweather = Merriweather({
-  weight: '400',
-  subsets: ['latin']
-});
 
 const poppins = Poppins({
   weight: '300',

@@ -7,12 +7,7 @@ import { Chip, Typography } from '@mui/material';
 import Project from '@/components/Project';
 import bpdiscordbot from '@/public/projects/bpdiscordbot.png';
 
-import { Poppins } from '@next/font/google';
 import { StaticImageData } from 'next/image';
-const poppins = Poppins({
-  weight: '400',
-  subsets: ['latin']
-});
 
 const container = {
   visible: {

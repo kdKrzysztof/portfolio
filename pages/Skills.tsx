@@ -1,7 +1,6 @@
-import React, { useRef } from 'react';
-import { Typography, Grid } from '@mui/material';
+import React from 'react';
+import { Typography } from '@mui/material';
 import styles from '../styles/Skills.module.scss';
-import Image, { StaticImageData } from 'next/image';
 import { motion } from 'framer-motion';
 import { skillsObjInterface } from 'types';
 import Skill from '../components/Skill';
