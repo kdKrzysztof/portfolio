@@ -89,7 +89,7 @@ const Portfolio = () => {
           initial="hidden"
           animate="visible"
           className={styles.rightSide}>
-          {projectsObj.map((index: ProjectObjInterface) => {
+          {projectsObj.map((index) => {
             return (
               <Project
                 key={index.projectName}
@@ -97,7 +97,7 @@ const Portfolio = () => {
                 ProjectName={index.projectName}
                 ProjectDesc={index.projectDesc}>
                 <>
-                  {index.techStack.map((element: string) => {
+                  {index.techStack.map((element) => {
                     return <Chip key={element} label={element} variant={'outlined'} />;
                   })}
                 </>

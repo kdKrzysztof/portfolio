@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { FC, useState } from 'react';
+import React, { useState } from 'react';
+import type { Dispatch, FC, SetStateAction} from 'react';
 // import styles from '../styles/Header.module.scss'
 import styles from '../styles/Header.module.scss';
 import { Roboto, Merriweather, Poppins } from '@next/font/google';
@@ -27,10 +28,7 @@ const poppins = Poppins({
 });
 
 import getLanguage from '@/components/GetLanguage';
-
-interface languageType {
-  setLang: Function;
-}
+import {languageType} from 'types';
 
 const Header: FC<languageType> = ({ setLang }) => {
   const [showMenu, setShowMenu] = useState(false);

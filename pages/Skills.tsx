@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import { Typography, Grid } from '@mui/material';
 import styles from '../styles/Skills.module.scss';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { motion } from 'framer-motion';
-
+import { skillsObjInterface } from 'types';
 import Skill from '../components/Skill';
 
 import JSlogo from '../public/techstack_icons/JavaScript-logo.png';
@@ -28,7 +28,7 @@ const poppins = Poppins({
   subsets: ['latin']
 });
 
-const skillsObj: any = [
+const skillsObj: skillsObjInterface[] = [
   { imageURL: HTMLlogo, skillName: 'HTML' },
   { imageURL: CSSlogo, skillName: 'CSS' },
   { imageURL: MUIlogo, skillName: 'MaterialUI' },
@@ -82,7 +82,7 @@ const Skills = () => {
           initial="hidden"
           animate="visible"
           className={styles.rightSide}>
-          {skillsObj.map((index: any) => {
+          {skillsObj.map((index) => {
             return (
               <Skill key={index.skillName} ImageURL={index.imageURL} SkillName={index.skillName} />
             );

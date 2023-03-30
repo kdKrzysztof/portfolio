@@ -9,6 +9,7 @@ let theme = createTheme({
     mode: 'dark'
   }
 });
+
 theme = responsiveFontSizes(theme);
 
 export default function App({ Component, pageProps }: AppProps) {

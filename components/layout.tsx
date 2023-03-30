@@ -5,7 +5,6 @@ import LanguageContext from './LanguageContext';
 import Head from 'next/head';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
-import styles from '../styles/Article.module.scss';
 import { useState } from 'react';
 
 export default function Layout({ children }: { children: React.ReactNode }) {

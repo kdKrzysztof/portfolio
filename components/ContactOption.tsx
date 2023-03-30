@@ -1,13 +1,8 @@
 import { Typography } from '@mui/material';
-import { StaticImageData } from 'next/image';
-import React, { FC } from 'react';
+import React from 'react';
 import styles from '../styles/Contact.module.scss';
-
-interface ContactOption {
-  ImageIcon: JSX.Element;
-  ContactName: string;
-  ContactData: string;
-}
+import type { FC } from 'react';
+import { ContactOption } from 'types';
 
 const ContactOption: FC<ContactOption> = ({ ImageIcon, ContactName, ContactData }) => {
   return (

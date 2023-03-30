@@ -5,6 +5,7 @@ import styles from '../styles/Portfolio.module.scss';
 import Image, { StaticImageData } from 'next/image';
 import { Roboto, Merriweather, Poppins } from '@next/font/google';
 import { motion } from 'framer-motion';
+import {ProjectProps} from 'types';
 
 const roboto = Roboto({
   weight: '400',
@@ -22,13 +23,6 @@ const item = {
     opacity: 1
   }
 };
-
-interface ProjectProps {
-  ImageURL: StaticImageData;
-  ProjectName: string;
-  ProjectDesc: string;
-  children: JSX.Element;
-}
 
 import getLanguage from '@/components/GetLanguage';
 
