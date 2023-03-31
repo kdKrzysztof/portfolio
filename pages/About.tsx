@@ -26,7 +26,7 @@ const About = () => {
     <div className={styles.main}>
       <div className={styles.content}>
         <div className={styles.leftSide}>
-          <Typography variant="h3" color="#00ADB5" className={styles.Title}>
+          <Typography variant="h4" color="#00ADB5" className={styles.Title}>
             {selectedLanguage.About.Title1}
           </Typography>
           <Typography variant="h6" color="white">

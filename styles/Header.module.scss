@@ -26,6 +26,10 @@ $focus-color: #00747C;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        & h1 {
+            font-size: 1.5rem;
+        }
+
         & button {
             display: none;
         }

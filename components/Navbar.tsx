@@ -4,14 +4,13 @@ import React, { useState } from 'react';
 import type { FC } from 'react';
 // import styles from '../styles/Header.module.scss'
 import styles from '../styles/Header.module.scss';
-import { Merriweather, Poppins } from '@next/font/google';
+import { Merriweather, Poppins, Helvetica } from '@next/font/google';
 
 import { Button, Grid } from '@mui/material';
 import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 
 import PolishFlag from '../public/polish.png';
 import EnglishFlag from '../public/english.png';
-
 
 const merriweather = Merriweather({
   weight: '400',
@@ -43,7 +42,7 @@ const Header: FC<languageType> = ({ setLang }) => {
         <Grid container direction="row" justifyContent="center" alignItems="center">
           <Grid item xs></Grid>
           <Grid item xs={6}>
-            <h1 className={merriweather.className}>{`Portfolio`}</h1>
+            <h1 className={poppins.className}>{`Portfolio`}</h1>
           </Grid>
           <Grid item xs>
             <Button
