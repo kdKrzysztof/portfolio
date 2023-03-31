@@ -15,7 +15,7 @@ $focus-color: #00747C;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        width: 60%;
+        width: 70%;
         height: 100%;
         
         @media screen and (max-width: 705px) {
@@ -59,6 +59,7 @@ $focus-color: #00747C;
         }
         & .rightSide {
             display: flex;
+            flex-direction: column !important;
             align-items: center;
             justify-content: center;
             width: 50%;
