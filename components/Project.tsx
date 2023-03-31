@@ -5,8 +5,7 @@ import styles from '../styles/Portfolio.module.scss';
 import Image from 'next/image';
 import { Poppins } from '@next/font/google';
 import { motion } from 'framer-motion';
-import {ProjectProps} from 'types';
-
+import { ProjectProps } from 'types';
 
 const poppins = Poppins({
   weight: '300',
@@ -22,7 +21,13 @@ const item = {
 
 import getLanguage from '@/components/GetLanguage';
 
-const Project: FC<ProjectProps> = ({ ImageURL, ProjectName, ProjectDesc, children }) => {
+const Project: FC<ProjectProps> = ({
+  ImageURL,
+  ProjectName,
+  ProjectDesc,
+  LivePreviewLink,
+  children
+}) => {
   let selectedLanguage = getLanguage();
 
   return (
@@ -86,14 +91,14 @@ const Project: FC<ProjectProps> = ({ ImageURL, ProjectName, ProjectDesc, childre
           alignItems: 'center',
           position: 'relative',
           gap: '.4rem',
-          width: '15rem',
+          width: '16.7rem',
           mt: '1rem',
           mb: '1rem',
           '::after': {
             content: '""',
             width: '17rem',
             height: '1px',
-            marginTop: '1rem',
+            marginTop: '1.5rem',
             marginBottom: '1rem',
             backgroundColor: '#00747C'
           }
@@ -104,7 +109,11 @@ const Project: FC<ProjectProps> = ({ ImageURL, ProjectName, ProjectDesc, childre
         <Button variant="outlined" size="medium">
           {selectedLanguage.MyWork.Button1}
         </Button>
-        <Button variant="outlined" size="medium" sx={{ marginLeft: '1rem' }}>
+        <Button
+          variant="outlined"
+          size="medium"
+          sx={{ marginLeft: '1rem' }}
+          disabled={LivePreviewLink === '' ? false : true}>
           {selectedLanguage.MyWork.Button2}
         </Button>
       </div>

@@ -5,9 +5,7 @@ import { motion } from 'framer-motion';
 import { Chip, Typography } from '@mui/material';
 
 import Project from '@/components/Project';
-import bpdiscordbot from '@/public/projects/bpdiscordbot.png';
-
-import { StaticImageData } from 'next/image';
+import { projectObjFunc } from '@/components/ProjectsObject'
 
 const container = {
   visible: {
@@ -20,53 +18,7 @@ const container = {
 
 const Portfolio = () => {
   let selectedLanguage = getLanguage();
-
-  interface ProjectObjInterface {
-    imageURL: StaticImageData;
-    projectName: string;
-    projectDesc: string;
-    techStack: string[];
-  }
-
-  const projectsObj: ProjectObjInterface[] = [
-    {
-      imageURL: bpdiscordbot,
-      projectName: 'Brickplanet Discord Bot',
-      projectDesc: selectedLanguage.MyWork.Project1,
-      techStack: [
-        'Node.JS',
-        'HTML Parser',
-        'Discord.JS v12',
-        'Express.JS',
-        'MongoDB',
-        'Mongoose',
-        'etc. [finish techstack later]'
-      ]
-    },
-    {
-      imageURL: bpdiscordbot,
-      projectName: 'Buildaverse Clothing Previewer',
-      projectDesc: selectedLanguage.MyWork.Project2,
-      techStack: [
-        'Node.JS',
-        'Express.JS',
-        'React',
-        'JS',
-        'Python(BlenderPY)',
-        'etc. [finish techstack later]',
-        'testeste',
-        'testeste',
-        'testeste',
-        'testeste',
-        'testeste',
-        'testeste',
-        'testeste',
-        'testeste',
-        'testeste',
-        'testeste'
-      ]
-    }
-  ];
+  const projectsObj = projectObjFunc();
 
   return (
     <div className={styles.main}>
@@ -90,7 +42,8 @@ const Portfolio = () => {
                 key={index.projectName}
                 ImageURL={index.imageURL}
                 ProjectName={index.projectName}
-                ProjectDesc={index.projectDesc}>
+                ProjectDesc={index.projectDesc}
+                LivePreviewLink={index.LivePreviewLink}>
                 <>
                   {index.techStack.map((element) => {
                     return <Chip key={element} label={element} variant={'outlined'} />;

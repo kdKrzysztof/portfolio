@@ -1,3 +1,4 @@
+import { LinkClasses } from "@mui/material/Link";
 import type { StaticImageData } from "next/image";
 import type { Dispatch, SetStateAction } from "react";
 
@@ -15,6 +16,7 @@ export interface ProjectProps {
     ImageURL: StaticImageData;
     ProjectName: string;
     ProjectDesc: string;
+    LivePreviewLink: string;
     children: JSX.Element;
 }
 
@@ -27,6 +29,7 @@ export interface ProjectObjInterface {
     imageURL: StaticImageData;
     projectName: string;
     projectDesc: string;
+    LivePreviewLink: string;
     techStack: string[];
 }
 
