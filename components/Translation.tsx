@@ -18,16 +18,40 @@ export const Translation = {
       About: {
         Title1: 'O mnie',
         AboutMeDesc:
-          'Nisi dolor dolor esse et est culpa cillum mollit. Qui officia officia elit adipisicing mollit. Aliquip nisi aute culpa dolor qui elit laboris ut. Anim pariatur adipisicing eu aliqua est aliquip quis dolor aliqua tempor id eu cillum laboris. Occaecat laborum cillum sunt commodo cillum anim do duis id id in.',
+          'Cześć, nazywam się Krzysztof Kudzia. Jestem ambitnym programistą, który rozpoczął swoją przygodę z kodowaniem w 2021 roku. Od tego czasu ciągle uczę się i udoskonalam swoje umiejętności w języku JavaScript. Czerpię radość z eksplorowania nowych technologii i frameworków. Dziękuję za poświęcenie czasu na poznanie mnie nieco lepiej i z niecierpliwością czekam na nawiązanie z Tobą kontaktu!',
         Education: 'Edukacja',
-        EduDesc: `Tempor qui eu mollit Lorem Lorem velit culpa enim in cillum fugiat. Quis fugiat sunt
-        reprehenderit`,
+        EduDesc: [
+          {
+            Title: `Zespół Szkół im. Walerego Goetla w Suchej Beskidzkiej`,
+            Desc: `(2018 - 2022) - Technik Informatyk`
+          },
+          {
+            Title: `Wyższa Szkoła Turystyki i Ekologii w Suchej Beskidzkiej`,
+            Desc: `(2022 - teraz) - Kierunek Informatyka`
+          }
+        ],
         WorkExp: 'Doświadczenie Zawodowe',
-        WorkExpDesc: `Tempor qui eu mollit Lorem Lorem velit culpa enim in cillum fugiat. Quis fugiat sunt
-        reprehenderit`,
+        WorkExpDesc: [
+          {
+            Title: 'Urząd Gminy Zawoja - Help Desk',
+            Desc: '(1 lipca 2021 - 31 lipca 2021)'
+          }
+        ],
         Portfolio: 'Projekty osobiste:',
-        PortfolioDesc: `Tempor qui eu mollit Lorem Lorem velit culpa enim in cillum fugiat. Quis fugiat sunt
-        reprehenderit`
+        PortfolioDesc: [
+          {
+            Title: '',
+            Desc: 'Brickplanet Discord Bot'
+          },
+          {
+            Title: '',
+            Desc: 'Buildaverse Clothing Previewer'
+          },
+          {
+            Title: '',
+            Desc: 'Personal Portfolio'
+          }
+        ]
       },
       MySkills: {
         Title1: 'Umiejętności',
@@ -38,6 +62,8 @@ export const Translation = {
         Project1:
           'Sint id ex in dolor est. Qui Lorem sunt voluptate esse consectetur aute tempor aliquip do. Duis officia cillum consequat cupidatat culpa ipsum tempor in officia veniam nisi nisi. Qui nulla nostrud sunt deserunt reprehenderit. Dolor voluptate Lorem deserunt consequat minim dolor voluptate magna duis cillum id. Aute esse eiusmod ipsum sunt magna qui dolor culpa.',
         Project2:
+          'Anim qui cupidatat pariatur amet. Amet tempor dolor proident dolor officia duis aliquip occaecat ad Lorem velit. Elit elit incididunt esse ullamco laboris reprehenderit elit cillum ea. Magna do cupidatat dolore adipisicing Lorem excepteur incididunt et dolor. Voluptate non ad occaecat minim ut pariatur aliquip fugiat dolor culpa consectetur ex consectetur.',
+        Project3:
           'Anim qui cupidatat pariatur amet. Amet tempor dolor proident dolor officia duis aliquip occaecat ad Lorem velit. Elit elit incididunt esse ullamco laboris reprehenderit elit cillum ea. Magna do cupidatat dolore adipisicing Lorem excepteur incididunt et dolor. Voluptate non ad occaecat minim ut pariatur aliquip fugiat dolor culpa consectetur ex consectetur.',
         Button1: 'Github',
         Button2: 'Podgląd'
@@ -62,16 +88,40 @@ export const Translation = {
       About: {
         Title1: 'About Me',
         AboutMeDesc:
-          'Nisi dolor dolor esse et est culpa cillum mollit. Qui officia officia elit adipisicing mollit. Aliquip nisi aute culpa dolor qui elit laboris ut. Anim pariatur adipisicing eu aliqua est aliquip quis dolor aliqua tempor id eu cillum laboris. Occaecat laborum cillum sunt commodo cillum anim do duis id id in.',
+          'Hi, my name is Krzysztof Kudzia. I am an ambitious programmer who started coding in 2021. Since then, I have been constantly learning and improving my skills in JavaScript. I find joy in exploring new technologies and frameworks. Thank you for taking the time to learn a little bit about me, and I look forward to connecting with you!',
         Education: 'Education',
-        EduDesc: `Tempor qui eu mollit Lorem Lorem velit culpa enim in cillum fugiat. Quis fugiat sunt
-        reprehenderit`,
+        EduDesc: [
+          {
+            Title: `Zespół Szkół im. Walerego Goetla w Suchej Beskidzkiej`,
+            Desc: `(2018 - 2022) - Technik Informatyk`
+          },
+          {
+            Title: `Wyższa Szkoła Turystyki i Ekologii w Suchej Beskidzkiej`,
+            Desc: `(2022 - teraz) - Kierunek Informatyka`
+          }
+        ],
         WorkExp: 'Work Experience',
-        WorkExpDesc: `Tempor qui eu mollit Lorem Lorem velit culpa enim in cillum fugiat. Quis fugiat sunt
-        reprehenderit`,
+        WorkExpDesc: [
+          {
+            Title: 'Urząd Gminy Zawoja - Help Desk',
+            Desc: '(1 lipca 2021 - 31 lipca 2021)'
+          }
+        ],
         Portfolio: 'Personal Projects:',
-        PortfolioDesc: `Tempor qui eu mollit Lorem Lorem velit culpa enim in cillum fugiat. Quis fugiat sunt
-        reprehenderit`
+        PortfolioDesc: [
+          {
+            Title: '',
+            Desc: 'Brickplanet Discord Bot'
+          },
+          {
+            Title: '',
+            Desc: 'Buildaverse Clothing Previewer'
+          },
+          {
+            Title: '',
+            Desc: 'Personal Portfolio'
+          }
+        ]
       },
       MySkills: {
         Title1: 'My Skills',
@@ -83,6 +133,8 @@ export const Translation = {
           'Quis dolore aliquip eiusmod aute consectetur veniam ullamco irure aliqua. Occaecat id ipsum consequat ea nisi esse. Sunt tempor esse occaecat velit deserunt excepteur laborum non ex ad est culpa laboris tempor.',
         Project2:
           'Cillum officia ex quis nostrud ipsum irure cillum enim reprehenderit nulla non elit. Tempor amet ut dolore est. Ipsum nostrud nostrud magna nostrud laboris.',
+        Project3:
+          'Anim qui cupidatat pariatur amet. Amet tempor dolor proident dolor officia duis aliquip occaecat ad Lorem velit. Elit elit incididunt esse ullamco laboris reprehenderit elit cillum ea. Magna do cupidatat dolore adipisicing Lorem excepteur incididunt et dolor. Voluptate non ad occaecat minim ut pariatur aliquip fugiat dolor culpa consectetur ex consectetur.',
         Button1: 'Github',
         Button2: 'Live preview'
       }
