@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Grid } from '@mui/material';
+import { Typography, Grid, List, ListItem } from '@mui/material';
 import styles from '../styles/About.module.scss';
 import styled from '@emotion/styled';
 
@@ -16,6 +16,7 @@ display: flex,
 flex-direction: column,
 `;
 
+import ListComponent from '@/components/List';
 import getLanguage from '@/components/GetLanguage';
 
 const About = () => {
@@ -33,7 +34,7 @@ const About = () => {
           </Typography>
         </div>
         <div className={styles.rightSide}>
-          <Grid container rowSpacing={2}>
+          <Grid container rowSpacing={2} direction="column">
             <Grid item>
               <RightText>
                 <Typography
@@ -43,9 +44,7 @@ const About = () => {
                   <SchoolSharpIcon sx={{ marginRight: '1rem' }} />
                   {selectedLanguage.About.Education}
                 </Typography>
-                <Typography variant="subtitle2" color="white">
-                  {selectedLanguage.About.EduDesc}
-                </Typography>
+                <ListComponent array={selectedLanguage.About.EduDesc} />
               </RightText>
             </Grid>
             <Grid item>
@@ -56,9 +55,7 @@ const About = () => {
                 <WorkHistorySharpIcon sx={{ marginRight: '1rem' }} />
                 {selectedLanguage.About.WorkExp}
               </Typography>
-              <Typography variant="subtitle2" color="white">
-                {selectedLanguage.About.WorkExpDesc}
-              </Typography>
+              <ListComponent array={selectedLanguage.About.WorkExpDesc} />
             </Grid>
             <Grid item>
               <Typography
@@ -74,7 +71,7 @@ const About = () => {
                 </Link>
               </Typography>
               <Typography variant="subtitle2" color="white">
-                {selectedLanguage.About.PortfolioDesc}
+                <ListComponent array={selectedLanguage.About.PortfolioDesc} />
               </Typography>
             </Grid>
           </Grid>

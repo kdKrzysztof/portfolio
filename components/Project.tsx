@@ -45,7 +45,7 @@ const Project: FC<ProjectProps> = ({
           alignItems: 'center',
           position: 'relative',
           marginTop: '1rem',
-          width: '18rem',
+          width: '17.5rem',
           '::after': {
             content: '""',
             width: '17rem',
@@ -57,17 +57,45 @@ const Project: FC<ProjectProps> = ({
         }}>
         {ProjectName}
       </Typography>
+      <Box
+        component="div"
+        sx={
+          {
+            // overflow: 'auto',
+            // height: '6.5rem'
+            // '&::-webkit-scrollbar': {
+            //   width: 2
+            // },
+            // '&::-webkit-scrollbar-track': {
+            //   boxShadow: `inset 0 0 6px rgba(0, 0, 0, 0.3)`
+            // },
+            // '&::-webkit-scrollbar-thumb': {
+            //   backgroundColor: '#00747C',
+            //   borderRadius: '999rem',
+            //   opacity: '0.3'
+            // }
+          }
+        }>
+        <Typography
+          variant="body2"
+          style={poppins.style}
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '17rem'
+          }}>
+          {ProjectDesc}
+        </Typography>
+      </Box>
       <Typography
-        variant="body2"
+        variant="h6"
         style={poppins.style}
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          position: 'relative',
-          width: '17rem',
-          '::after': {
+          '::before': {
             content: '""',
             width: '17rem',
             height: '1px',
@@ -76,9 +104,6 @@ const Project: FC<ProjectProps> = ({
             backgroundColor: '#00747C'
           }
         }}>
-        {ProjectDesc}
-      </Typography>
-      <Typography variant="h6" style={poppins.style}>
         Tech stack:
       </Typography>
       <Box

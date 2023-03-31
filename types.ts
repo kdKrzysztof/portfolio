@@ -37,3 +37,10 @@ export interface skillsObjInterface {
     imageURL: string | StaticImageData;
     skillName: string;
 }
+
+export type ListInterface = {
+    array: {
+        Title: string,
+        Desc: string
+    }[]
+}
