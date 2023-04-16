@@ -138,7 +138,7 @@ const Project: FC<ProjectProps> = ({
           variant="outlined"
           size="medium"
           sx={{ marginLeft: '1rem' }}
-          disabled={LivePreviewLink === '' ? false : true}>
+          disabled={LivePreviewLink === '' ? true : false}>
           {selectedLanguage.MyWork.Button2}
         </Button>
       </div>
