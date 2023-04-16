@@ -12,7 +12,7 @@ $skill-background-color: #171b20;
                                         supported by Chrome, Edge, Opera and Firefox */
 }
 
-.main {
+.portfolioContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ $skill-background-color: #171b20;
     width: 100vw;
     height: auto;
     
-    & .content {
+    & .portfolioContent {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -30,7 +30,7 @@ $skill-background-color: #171b20;
         margin-top: 2rem;
         margin-bottom: 3rem;
 
-        & .leftSide {
+        & .portfolioHeading {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -38,7 +38,7 @@ $skill-background-color: #171b20;
             width: 100%;
         }
          
-        & .rightSide {
+        & .portfolioProjectsContainer {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;

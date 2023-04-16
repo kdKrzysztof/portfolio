@@ -44,7 +44,7 @@ const Skill: FC<SkillInterface> = ({ImageURL, SkillName}) => {
         }}
         maxWidth="6rem"
         maxHeight="6rem">
-        <Image src={ImageURL} alt="" className={styles.SkillImage} />
+        <Image src={ImageURL} alt="" className={styles.skillImage} />
         <Typography variant="subtitle1" style={poppins.style}>
           {SkillName}
         </Typography>

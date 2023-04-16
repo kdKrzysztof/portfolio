@@ -65,7 +65,7 @@ $focus-color: #00747C;
 
 }
 
-.buttonsArea {
+.buttonsContainer {
     display: flex;
     align-items:center;
     justify-content: center;
@@ -130,12 +130,12 @@ $focus-color: #00747C;
     }
 }
 
-.show {
+.navbarSlide {
     max-height: 300px;
     transition: max-height 300ms ease-in;
 }
 
-.selectLanguageImage{
+.countryImageButton{
     max-width: 1.8rem;
     max-height: 1rem;
     object-fit: contain;

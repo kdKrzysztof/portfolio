@@ -59,13 +59,13 @@ const Skills = () => {
   let selectedLanguage = getLanguage();
 
   return (
-    <div className={styles.main}>
-      <div className={styles.content}>
-        <motion.div className={styles.leftSide}>
+    <div className={styles.skillsContainer}>
+      <div className={styles.skillsContent}>
+        <motion.div className={styles.skillsHeading}>
           <Typography
             variant="h4"
             color="#00ADB5"
-            className={[styles.Title, styles.noselect].join(' ')}>
+            className={[styles.skillsTitle, styles.noselect].join(' ')}>
             {selectedLanguage.MySkills.Title1}
           </Typography>
           <Typography
@@ -80,7 +80,7 @@ const Skills = () => {
           variants={container}
           initial="hidden"
           animate="visible"
-          className={styles.rightSide}>
+          className={styles.skillsImageContainer}>
           {skillsObj.map((index) => {
             return (
               <Skill key={index.skillName} ImageURL={index.imageURL} SkillName={index.skillName} />

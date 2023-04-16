@@ -1,7 +1,7 @@
 $base-color: #00ADB5;
 $focus-color: #00747C;
 
-.main {
+.aboutMeContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@ $focus-color: #00747C;
     height: auto;
 
     
-    & .content {
+    & .aboutMeContent {
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -39,7 +39,7 @@ $focus-color: #00747C;
         }
 
 
-        & .leftSide {
+        & .aboutMeDesc {
             display: flex;
             flex-direction: column;
             overflow: hidden;
@@ -59,7 +59,7 @@ $focus-color: #00747C;
                 margin-top: 1rem; //been using these options for ::after
             }
         }
-        & .rightSide {
+        & .aboutMeDetails {
             display: flex;
             flex-direction: column !important;
             align-items: center;
@@ -78,7 +78,7 @@ $focus-color: #00747C;
     }
 }
 
-.Title{
+.aboutMeTitle{
     display: flex;
     align-items:center;
     flex-direction: row;

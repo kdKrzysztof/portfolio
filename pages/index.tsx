@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <div className={styles.main}>
-      <div className={styles.part1}>
+      <div className={styles.mainContent}>
         <Typography variant="h5" color="#00ADB5">
           {selectedLanguage.Home.preName}
         </Typography>
@@ -17,7 +17,7 @@ const Contact = () => {
           {selectedLanguage.Home.Name}
         </Typography>
         <Typography variant="h4">{selectedLanguage.Home.title}</Typography>
-        <div>
+        <div className={'buttonsContainer'}>
           <Button variant="outlined" size="medium">
             {selectedLanguage.Home.button1}
           </Button>

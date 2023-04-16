@@ -3,8 +3,8 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import type { FC } from 'react';
 // import styles from '../styles/Header.module.scss'
-import styles from '../styles/Header.module.scss';
-import { Merriweather, Poppins, Helvetica } from '@next/font/google';
+import styles from '../styles/Navbar.module.scss';
+import { Merriweather, Poppins } from '@next/font/google';
 
 import { Button, Grid } from '@mui/material';
 import MenuSharpIcon from '@mui/icons-material/MenuSharp';
@@ -38,7 +38,7 @@ const Header: FC<languageType> = ({ setLang }) => {
 
   return (
     <header className={styles.navbarContainer}>
-      <div>
+      <div className="gridContainer">
         <Grid container direction="row" justifyContent="center" alignItems="center">
           <Grid item xs></Grid>
           <Grid item xs={6}>
@@ -56,7 +56,7 @@ const Header: FC<languageType> = ({ setLang }) => {
           </Grid>
         </Grid>
       </div>
-      <nav className={[styles.buttonsArea, poppins.className, showMenu && styles.show].join(' ')}>
+      <nav className={[styles.buttonsContainer, poppins.className, showMenu && styles.navbarSlide].join(' ')}>
         <Link href="/">{selectedLanguage.Header.Home}</Link>
         <Link href="/About">{selectedLanguage.Header.About}</Link>
         <Link href="/Skills">{selectedLanguage.Header.Skills}</Link>
@@ -68,7 +68,7 @@ const Header: FC<languageType> = ({ setLang }) => {
           <Image
             src={openLang ? EnglishFlag : PolishFlag}
             alt=""
-            className={styles.selectLanguageImage}></Image>
+            className={styles.countryImageButton}></Image>
         </Button>
       </nav>
     </header>

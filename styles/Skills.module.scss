@@ -12,7 +12,7 @@ $skill-background-color: #171b20;
                                         supported by Chrome, Edge, Opera and Firefox */
 }
 
-.main {
+.skillsContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ $skill-background-color: #171b20;
     box-sizing: border-box;
 
     
-    & .content {
+    & .skillsContent {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -32,7 +32,7 @@ $skill-background-color: #171b20;
         margin-top: 3rem;
         margin-bottom: 3rem;
 
-        & .leftSide {
+        & .skillsHeading {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,7 +40,7 @@ $skill-background-color: #171b20;
             width: 100%;
         }
 
-        & .rightSide {
+        & .skillsImageContainer {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -70,7 +70,7 @@ $skill-background-color: #171b20;
     }
 }
 
-.Title{
+.skillsTitle{
     display: flex;
     align-items:center;
     justify-content: center;
@@ -110,7 +110,7 @@ $skill-background-color: #171b20;
     }
 }
 
-.SkillImage{
+.skillImage{
     max-width: 50%;
     object-fit: contain;
 }

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { Chip, Typography } from '@mui/material';
 
 import Project from '@/components/Project';
-import { projectObjFunc } from '@/components/ProjectsObject'
+import { projectObjFunc } from '@/components/ProjectsObject';
 
 const container = {
   visible: {
@@ -21,9 +21,9 @@ const Portfolio = () => {
   const projectsObj = projectObjFunc();
 
   return (
-    <div className={styles.main}>
-      <div className={styles.content}>
-        <motion.div className={styles.leftSide}>
+    <div className={styles.portfolioContainer}>
+      <div className={styles.portfolioContent}>
+        <motion.div className={styles.portfolioHeading}>
           <Typography
             variant="h4"
             color="#00ADB5"
@@ -35,7 +35,7 @@ const Portfolio = () => {
           variants={container}
           initial="hidden"
           animate="visible"
-          className={styles.rightSide}>
+          className={styles.portfolioProjectsContainer}>
           {projectsObj.map((index) => {
             return (
               <Project
