@@ -56,7 +56,12 @@ const Header: FC<languageType> = ({ setLang }) => {
           </Grid>
         </Grid>
       </div>
-      <nav className={[styles.buttonsContainer, poppins.className, showMenu && styles.navbarSlide].join(' ')}>
+      <nav
+        className={[
+          styles.buttonsContainer,
+          poppins.className,
+          showMenu && styles.navbarSlide
+        ].join(' ')}>
         <Link href="/">{selectedLanguage.Header.Home}</Link>
         <Link href="/About">{selectedLanguage.Header.About}</Link>
         <Link href="/Skills">{selectedLanguage.Header.Skills}</Link>

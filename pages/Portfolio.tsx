@@ -16,7 +16,7 @@ const container = {
   }
 };
 
-const Portfolio = () => {
+const Projects = () => {
   let selectedLanguage = getLanguage();
   const projectsObj = projectObjFunc();
 
@@ -59,4 +59,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;
