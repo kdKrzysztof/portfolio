@@ -93,20 +93,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-{
-  /* <Skill ImageURL={HTMLlogo} SkillName="HTML" />
-<Skill ImageURL={CSSlogo} SkillName="CSS" />
-<Skill ImageURL={MUIlogo} SkillName="MaterialUI" />
-<Skill ImageURL={JSlogo} SkillName="JavaScript" />
-<Skill ImageURL={TSlogo} SkillName="TypeScript" />
-<Skill ImageURL={REACTlogo} SkillName="React" />
-<Skill ImageURL={NEXTlogo} SkillName="NextJS" />
-<Skill ImageURL={NODElogo} SkillName="NodeJS" />
-<Skill ImageURL={EXPRESSlogo} SkillName="Express.js" />
-<Skill ImageURL={MONGODBlogo} SkillName="MongoDB" />
-<Skill ImageURL={MONGOOSElogo} SkillName="Mongoose" />
-<Skill ImageURL={MYSQLlogo} SkillName="MySQL" />
-<Skill ImageURL={MARIADBlogo} SkillName="MariaDB" />
-<Skill ImageURL={SEQUELIZElogo} SkillName="Sequelize" /> */
-} // before used this
