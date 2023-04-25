@@ -18,7 +18,7 @@ export const Translation = {
       About: {
         Title1: 'O mnie',
         AboutMeDesc:
-          'Cześć, nazywam się Krzysztof Kudzia. Jestem ambitnym programistą, który rozpoczął swoją przygodę z kodowaniem w 2021 roku. Od tego czasu ciągle uczę się i udoskonalam swoje umiejętności w języku JavaScript. Czerpię radość z eksplorowania nowych technologii i frameworków. Dziękuję za poświęcenie czasu na poznanie mnie nieco lepiej i z niecierpliwością czekam na nawiązanie z Tobą kontaktu!',
+          'Cześć, nazywam się Krzysztof Kudzia. Jestem ambitnym programistą, który rozpoczął swoją przygodę z kodowaniem w 2022 roku. Od tego czasu ciągle uczę się i udoskonalam swoje umiejętności w języku JavaScript. Czerpię radość z eksplorowania nowych technologii i frameworków. Dziękuję za poświęcenie czasu na poznanie mnie nieco lepiej i z niecierpliwością czekam na nawiązanie z Tobą kontaktu!',
         Education: 'Edukacja',
         EduDesc: [
           {
@@ -88,7 +88,7 @@ export const Translation = {
       About: {
         Title1: 'About Me',
         AboutMeDesc:
-          'Hi, my name is Krzysztof Kudzia. I am an ambitious programmer who started coding in 2021. Since then, I have been constantly learning and improving my skills in JavaScript. I find joy in exploring new technologies and frameworks. Thank you for taking the time to learn a little bit about me, and I look forward to connecting with you!',
+          'Hi, my name is Krzysztof Kudzia. I am an ambitious programmer who started coding in 2022. Since then, I have been constantly learning and improving my skills in JavaScript. I find joy in exploring new technologies and frameworks. Thank you for taking the time to learn a little bit about me, and I look forward to connecting with you!',
         Education: 'Education',
         EduDesc: [
           {
