@@ -4,7 +4,7 @@ import { Button, Typography } from '@mui/material';
 import Link from 'next/link';
 import getLanguage from '@/components/GetLanguage';
 
-const Contact = () => {
+const Home = () => {
   let selectedLanguage = getLanguage();
 
   return (
@@ -30,4 +30,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Home;
