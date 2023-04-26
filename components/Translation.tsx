@@ -18,7 +18,7 @@ export const Translation = {
       About: {
         Title1: 'O mnie',
         AboutMeDesc:
-          'Cześć, nazywam się Krzysztof Kudzia. Jestem ambitnym programistą, który rozpoczął swoją przygodę z kodowaniem w 2022 roku. Od tego czasu ciągle uczę się i udoskonalam swoje umiejętności w języku JavaScript. Czerpię radość z eksplorowania nowych technologii i frameworków. Dziękuję za poświęcenie czasu na poznanie mnie nieco lepiej i z niecierpliwością czekam na nawiązanie z Tobą kontaktu!',
+          'Cześć, nazywam się Krzysztof Kudzia. Jestem ambitnym programistą, który rozpoczął swoją przygodę z kodowaniem w 2022 roku. Od tego czasu ciągle uczę się i udoskonalam swoje umiejętności w języku JavaScript. Czerpię radość z odkrywania nowych technologii i frameworków. Pragnę podjąć pracę jako frontend developer.',
         Education: 'Edukacja',
         EduDesc: [
           {
@@ -88,7 +88,7 @@ export const Translation = {
       About: {
         Title1: 'About Me',
         AboutMeDesc:
-          'Hi, my name is Krzysztof Kudzia. I am an ambitious programmer who started coding in 2022. Since then, I have been constantly learning and improving my skills in JavaScript. I find joy in exploring new technologies and frameworks. Thank you for taking the time to learn a little bit about me, and I look forward to connecting with you!',
+          'Hi, my name is Krzysztof Kudzia. I am an ambitious programmer who started coding in 2022. Since then, I have been constantly learning and improving my skills in JavaScript. I find joy in exploring new technologies and frameworks. I would like to work as a frontend developer.',
         Education: 'Education',
         EduDesc: [
           {
@@ -104,7 +104,7 @@ export const Translation = {
         WorkExpDesc: [
           {
             Title: 'Urząd Gminy Zawoja - Help Desk',
-            Desc: '(1 lipca 2021 - 31 lipca 2021)'
+            Desc: '(28 czerwca 2021 - 23 lipca 2021)'
           }
         ],
         Portfolio: 'Personal Projects:',
