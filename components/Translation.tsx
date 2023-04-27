@@ -67,6 +67,9 @@ export const Translation = {
           'Anim qui cupidatat pariatur amet. Amet tempor dolor proident dolor officia duis aliquip occaecat ad Lorem velit. Elit elit incididunt esse ullamco laboris reprehenderit elit cillum ea. Magna do cupidatat dolore adipisicing Lorem excepteur incididunt et dolor. Voluptate non ad occaecat minim ut pariatur aliquip fugiat dolor culpa consectetur ex consectetur.',
         Button1: 'Github',
         Button2: 'Podgląd'
+      },
+      ContactMe: {
+        Title: `Skontaktuj się ze mną`
       }
     },
 
@@ -137,6 +140,9 @@ export const Translation = {
           'Anim qui cupidatat pariatur amet. Amet tempor dolor proident dolor officia duis aliquip occaecat ad Lorem velit. Elit elit incididunt esse ullamco laboris reprehenderit elit cillum ea. Magna do cupidatat dolore adipisicing Lorem excepteur incididunt et dolor. Voluptate non ad occaecat minim ut pariatur aliquip fugiat dolor culpa consectetur ex consectetur.',
         Button1: 'Github',
         Button2: 'Live preview'
+      },
+      ContactMe: {
+        Title: `Let's get in touch`
       }
     }
   }

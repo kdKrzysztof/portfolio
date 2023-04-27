@@ -7,7 +7,7 @@ import ContactType from '@/components/ContactOption';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MessageIcon from '@mui/icons-material/Message';
-
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Contact = () => {
   let selectedLanguage = getLanguage();
@@ -16,23 +16,23 @@ const Contact = () => {
     <div className={styles.main}>
       <div className={styles.mainTop}>
         <Typography variant="h4" color="#00ADB5">
-          {`Let's get in touch`}
+          {selectedLanguage.ContactMe.Title}
         </Typography>
       </div>
       <div className={styles.mainBottom}>
         <ContactType
+          ContactName={'Github'}
+          ContactData={'https://github.com/kdKrzysztof'}
+          ImageIcon={<GitHubIcon sx={{ fontSize: '2rem' }} />}
+        />
+        <ContactType
           ContactName={'E-mail'}
-          ContactData={'example@examp.com'}
+          ContactData={'krzysztof.kudzia.dev@gmail.com'}
           ImageIcon={<EmailIcon sx={{ fontSize: '2rem' }} />}
         />
         <ContactType
-          ContactName={'LinkedIn'}
-          ContactData={'https://pl.linkedin.com/'}
-          ImageIcon={<LinkedInIcon sx={{ fontSize: '2rem' }} />}
-        />
-        <ContactType
           ContactName={'Messenger'}
-          ContactData={'m.me/x2x823x121'}
+          ContactData={'m.me/100092339736369'}
           ImageIcon={<MessageIcon sx={{ fontSize: '2rem' }} />}
         />
       </div>

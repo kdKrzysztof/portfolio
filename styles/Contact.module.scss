@@ -61,9 +61,7 @@ $focus-color: #00747C;
     width: 100vw;
     height: auto;
     flex-wrap: wrap;
-    @media screen and (max-width: 680px) { 
-        width: 50vw;
-    }
+    
     & .ContactContainer{
         display: flex;
         flex-direction: column;
