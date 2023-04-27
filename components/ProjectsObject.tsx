@@ -59,7 +59,7 @@ export const projectObjFunc = () => {
       LivePreviewLink: '',
       GithubLink: 'https://github.com/kdKrzysztof/TodoApp',
       techStack: [
-        'Node-ts',
+        'TS-Node',
         'Express.js',
         'Express-validator',
         'Sequelize',
