@@ -60,11 +60,13 @@ export const Translation = {
       MyWork: {
         Title1: 'Moje Projekty',
         Project1:
-          'Sint id ex in dolor est. Qui Lorem sunt voluptate esse consectetur aute tempor aliquip do. Duis officia cillum consequat cupidatat culpa ipsum tempor in officia veniam nisi nisi. Qui nulla nostrud sunt deserunt reprehenderit. Dolor voluptate Lorem deserunt consequat minim dolor voluptate magna duis cillum id. Aute esse eiusmod ipsum sunt magna qui dolor culpa.',
+          'Projekt stworzony w celu informowania graczy Brickplanet o najnowszych wydaniach przedmiotów. Łączy również konta Discord z określonymi kontami Brickplanet, aby pomóc w identyfikacji graczy.',
         Project2:
-          'Anim qui cupidatat pariatur amet. Amet tempor dolor proident dolor officia duis aliquip occaecat ad Lorem velit. Elit elit incididunt esse ullamco laboris reprehenderit elit cillum ea. Magna do cupidatat dolore adipisicing Lorem excepteur incididunt et dolor. Voluptate non ad occaecat minim ut pariatur aliquip fugiat dolor culpa consectetur ex consectetur.',
+          'Aplikacja internetowa, która wykorzystuje Node.js, Blender Python i React do generowania awatarów dla użytkowników. Aplikacja została zaprojektowana tak, aby umożliwiać użytkownikom podgląd różnych opcji odzieżowych na ich awatarach, bez konieczności przesyłania niestandardowych tekstur na platformę Buildaverse.',
         Project3:
-          'Anim qui cupidatat pariatur amet. Amet tempor dolor proident dolor officia duis aliquip occaecat ad Lorem velit. Elit elit incididunt esse ullamco laboris reprehenderit elit cillum ea. Magna do cupidatat dolore adipisicing Lorem excepteur incididunt et dolor. Voluptate non ad occaecat minim ut pariatur aliquip fugiat dolor culpa consectetur ex consectetur.',
+          'To jest moja osobista strona portfolio, na której prezentuję swoje umiejętności i projekty. Strona posiada czysty i prosty design z łatwą nawigacją po różnych sekcjach.',
+        Project4:
+          'To prosta aplikacja, która umożliwia użytkownikom tworzenie i zarządzanie swoimi listami zadań. Użytkownicy mogą dodawać nowe zadania do swojej listy, oznaczać je jako wykonane i usuwać w razie potrzeby.',
         Button1: 'Github',
         Button2: 'Podgląd'
       },
@@ -133,11 +135,13 @@ export const Translation = {
       MyWork: {
         Title1: 'My Projects',
         Project1:
-          'Quis dolore aliquip eiusmod aute consectetur veniam ullamco irure aliqua. Occaecat id ipsum consequat ea nisi esse. Sunt tempor esse occaecat velit deserunt excepteur laborum non ex ad est culpa laboris tempor.',
+          'The Brickplanet Discord Bot is a project designed to keep Brickplanet players up- to-date with the latest item releases. It also links Discord accounts to specific Brickplanet accounts to help identify players.',
         Project2:
-          'Cillum officia ex quis nostrud ipsum irure cillum enim reprehenderit nulla non elit. Tempor amet ut dolore est. Ipsum nostrud nostrud magna nostrud laboris.',
+          'Web application that utilizes Node.js, Blender Python, and React to generate custom avatar model pictures for users. The application is designed to allow users to preview different clothing options on their avatars, without the need for them to upload custom textures to Buildaverse platform.',
         Project3:
-          'Anim qui cupidatat pariatur amet. Amet tempor dolor proident dolor officia duis aliquip occaecat ad Lorem velit. Elit elit incididunt esse ullamco laboris reprehenderit elit cillum ea. Magna do cupidatat dolore adipisicing Lorem excepteur incididunt et dolor. Voluptate non ad occaecat minim ut pariatur aliquip fugiat dolor culpa consectetur ex consectetur.',
+          'This is my personal portfolio website that showcases my skills and projects. The website features a clean and simple design, with easy navigation to different sections.',
+        Project4:
+          'This is a simple todo list application that allows users to create and manage their to-do lists. Users can add new tasks to their list, mark tasks as completed, and delete tasks as needed.',
         Button1: 'Github',
         Button2: 'Live preview'
       },

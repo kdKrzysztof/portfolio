@@ -6,6 +6,7 @@ import getLanguage from '@/components/GetLanguage';
 
 const Home = () => {
   let selectedLanguage = getLanguage();
+  let resumeLink = 'https://drive.google.com/file/d/15d35gdN4GZNZgtZ3UFlUrUgFqsstq4X3/view';
 
   return (
     <div className={styles.main}>
@@ -19,7 +20,7 @@ const Home = () => {
         <Typography variant="h4">{selectedLanguage.Home.title}</Typography>
         <div className={'buttonsContainer'}>
           <Button variant="outlined" size="medium">
-            {selectedLanguage.Home.button1}
+            <Link href={resumeLink}>{selectedLanguage.Home.button1}</Link>
           </Button>
           <Button variant="outlined" size="medium">
             <Link href="/Contact">{selectedLanguage.Home.button2}</Link>

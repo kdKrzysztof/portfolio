@@ -20,12 +20,14 @@ const item = {
 };
 
 import getLanguage from '@/components/GetLanguage';
+import Link from 'next/link';
 
 const Project: FC<ProjectProps> = ({
   ImageURL,
   ProjectName,
   ProjectDesc,
   LivePreviewLink,
+  GithubLink,
   children
 }) => {
   let selectedLanguage = getLanguage();
@@ -132,7 +134,7 @@ const Project: FC<ProjectProps> = ({
       </Box>
       <div className={styles.buttonContainer}>
         <Button variant="outlined" size="medium">
-          {selectedLanguage.MyWork.Button1}
+          <Link href={GithubLink}>{selectedLanguage.MyWork.Button1}</Link>
         </Button>
         <Button
           variant="outlined"

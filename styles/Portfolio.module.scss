@@ -61,11 +61,17 @@ $skill-background-color: #171b20;
     
     &::before {
         content: "";
-        width: 30%;
+        width: 40%;
         margin-right: 2%;
         height: 1px;
         background-color: $focus-color;
 
+        @media screen and (max-width: 1557px) {
+            width: 35%;
+        }
+        @media screen and (max-width: 745px) {
+            width: 30%;
+        }
         @media screen and (max-width: 500px) {
             display: none;
         }
@@ -73,12 +79,17 @@ $skill-background-color: #171b20;
     
     &::after {
         content: "";
-        width: 30%;
+        width: 40%;
         margin-left: 2%;
         height: 1px;
         background-color: $focus-color;
-        // transition: width 400ms 0 200ms;
-
+        
+        @media screen and (max-width: 1557px) {
+            width: 35%;
+        }
+        @media screen and (max-width: 745px) {
+            width: 30%;
+        }
         @media screen and (max-width: 500px) {
             margin-left: 5%;
         }
@@ -126,4 +137,13 @@ $skill-background-color: #171b20;
     object-fit: fill;
     opacity: 70%;
     transition: opacity 200ms;
+}
+
+.buttonContainer {
+    * {
+        text-decoration: none;
+    }    
+    & a {
+        color: #00ADB5;
+    }
 }

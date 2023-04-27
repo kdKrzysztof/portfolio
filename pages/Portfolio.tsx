@@ -43,6 +43,7 @@ const Projects = () => {
                 ImageURL={index.imageURL}
                 ProjectName={index.projectName}
                 ProjectDesc={index.projectDesc}
+                GithubLink={index.GithubLink}
                 LivePreviewLink={index.LivePreviewLink}>
                 <>
                   {index.techStack.map((element) => {
