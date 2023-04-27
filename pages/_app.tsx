@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import Layout from 'components/layout';
 import { Container, ThemeProvider } from '@mui/material';
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+import { useNextCssRemovalPrevention } from '@/hooks/useNextCssRemovalPrevention';
 
 let theme = createTheme({
   palette: {
@@ -13,6 +14,7 @@ let theme = createTheme({
 theme = responsiveFontSizes(theme);
 
 export default function App({ Component, pageProps }: AppProps) {
+  useNextCssRemovalPrevention();
   return (
     <ThemeProvider theme={theme}>
       <Container
