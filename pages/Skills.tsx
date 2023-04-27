@@ -6,8 +6,8 @@ import { skillsObjInterface } from 'types';
 import Skill from '../components/Skill';
 
 import JSlogo from '../public/techstack_icons/JavaScript-logo.png';
-import CSSlogo from '../public/techstack_icons/CSS-logo.png';
-import HTMLlogo from '../public/techstack_icons/HTML-logo.png';
+import CSSlogo from '../public/techstack_icons/css-logo.png';
+import HTMLlogo from '../public/techstack_icons/html-logo.png';
 import REACTlogo from '../public/techstack_icons/react-logo.png';
 import NEXTlogo from '../public/techstack_icons/next-js-logo.png';
 import TSlogo from '../public/techstack_icons/Typescript-logo.png';
