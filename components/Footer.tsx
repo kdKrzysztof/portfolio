@@ -9,9 +9,9 @@ const roboto = Roboto_Flex({
 
 const Footer = () => {
   return (
-    <div className={[styles.main, roboto.className].join(' ')}>
+    <footer className={[styles.main, roboto.className].join(' ')}>
       Website made by Krzysztof Kudzia
-    </div>
+    </footer>
   );
 };
 
