@@ -18,7 +18,7 @@ export const Translation = {
       About: {
         Title1: 'O mnie',
         AboutMeDesc:
-          'Cześć, nazywam się Krzysztof Kudzia. Jestem ambitnym programistą, który rozpoczął swoją przygodę z kodowaniem w 2022 roku. Od tego czasu ciągle uczę się i udoskonalam swoje umiejętności w języku JavaScript. Czerpię radość z odkrywania nowych technologii i frameworków. Pragnę podjąć pracę jako frontend developer.',
+          'Cześć, nazywam się Krzysztof Kudzia. Jestem ambitnym programistą. Moja przygoda z kodowaniem zaczęła się w 2022 roku. Od tego czasu ciągle uczę się i udoskonalam swoje umiejętności w języku JavaScript. Czerpię radość z odkrywania nowych technologii i frameworków. Pragnę podjąć pracę jako front-end developer.',
         Education: 'Edukacja',
         EduDesc: [
           {
@@ -35,6 +35,10 @@ export const Translation = {
           {
             Title: 'Urząd Gminy Zawoja - Help Desk',
             Desc: '(1 lipca 2021 - 31 lipca 2021)'
+          },
+          {
+            Title: 'Euvic S.A. - Praktyki React Front-end Developer',
+            Desc: '(03 lipca 2023 - 31 lipca 2023)'
           }
         ],
         Portfolio: 'Projekty osobiste:',
@@ -50,6 +54,10 @@ export const Translation = {
           {
             Title: '',
             Desc: 'Personal Portfolio'
+          },
+          {
+            Title: '',
+            Desc: 'Todo-app'
           }
         ]
       },
@@ -64,9 +72,9 @@ export const Translation = {
         Project2:
           'Aplikacja internetowa, która wykorzystuje Node.js, Blender Python i React do generowania awatarów dla użytkowników. Aplikacja została zaprojektowana tak, aby umożliwiać użytkownikom podgląd różnych opcji odzieżowych na ich awatarach, bez konieczności przesyłania niestandardowych tekstur na platformę Buildaverse.',
         Project3:
-          'To jest moja osobista strona portfolio, na której prezentuję swoje umiejętności i projekty. Strona posiada czysty i prosty design z łatwą nawigacją po różnych sekcjach.',
+          'Moja osobista strona portfolio, na której prezentuję swoje umiejętności i projekty. Strona posiada czysty i prosty design z łatwą nawigacją po różnych sekcjach.',
         Project4:
-          'To prosta aplikacja, która umożliwia użytkownikom tworzenie i zarządzanie swoimi listami zadań. Użytkownicy mogą dodawać nowe zadania do swojej listy, oznaczać je jako wykonane i usuwać w razie potrzeby.',
+          'Prosta aplikacja, która umożliwia użytkownikom tworzenie i zarządzanie swoimi listami zadań. Użytkownicy mogą dodawać nowe zadania do swojej listy, oznaczać je jako wykonane i usuwać w razie potrzeby.',
         Button1: 'Github',
         Button2: 'Podgląd'
       },
@@ -93,7 +101,7 @@ export const Translation = {
       About: {
         Title1: 'About Me',
         AboutMeDesc:
-          'Hi, my name is Krzysztof Kudzia. I am an ambitious programmer who started coding in 2022. Since then, I have been constantly learning and improving my skills in JavaScript. I find joy in exploring new technologies and frameworks. I would like to work as a frontend developer.',
+          'Hi, my name is Krzysztof Kudzia. I am an ambitious programmer. I have started coding in 2022. Since then, I have been constantly learning and improving my skills in JavaScript. I find joy in exploring new technologies and frameworks. I would like to work as a frontend developer.',
         Education: 'Education',
         EduDesc: [
           {
@@ -109,7 +117,11 @@ export const Translation = {
         WorkExpDesc: [
           {
             Title: 'Urząd Gminy Zawoja - Help Desk',
-            Desc: '(28 czerwca 2021 - 23 lipca 2021)'
+            Desc: '(28 june 2021 - 23 july 2021)'
+          },
+          {
+            Title: 'Euvic S.A. - Apprenticeship React Front-end Developer',
+            Desc: '(03 july 2023 - 31 july 2023)'
           }
         ],
         Portfolio: 'Personal Projects:',
@@ -125,6 +137,10 @@ export const Translation = {
           {
             Title: '',
             Desc: 'Personal Portfolio'
+          },
+          {
+            Title: '',
+            Desc: 'Todo-app'
           }
         ]
       },
@@ -139,9 +155,9 @@ export const Translation = {
         Project2:
           'Web application that utilizes Node.js, Blender Python, and React to generate custom avatar model pictures for users. The application is designed to allow users to preview different clothing options on their avatars, without the need for them to upload custom textures to Buildaverse platform.',
         Project3:
-          'This is my personal portfolio website that showcases my skills and projects. The website features a clean and simple design, with easy navigation to different sections.',
+          'My personal portfolio website that showcases my skills and projects. The website features a clean and simple design, with easy navigation to different sections.',
         Project4:
-          'This is a simple todo list application that allows users to create and manage their to-do lists. Users can add new tasks to their list, mark tasks as completed, and delete tasks as needed.',
+          'Simple todo list application that allows users to create and manage their to-do lists. Users can add new tasks to their list, mark tasks as completed, and delete tasks as needed.',
         Button1: 'Github',
         Button2: 'Live preview'
       },
