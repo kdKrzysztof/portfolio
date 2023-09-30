@@ -110,7 +110,7 @@ export const Translation = {
           },
           {
             Title: `Wyższa Szkoła Turystyki i Ekologii w Suchej Beskidzkiej`,
-            Desc: `(2022 - teraz) - Kierunek Informatyka`
+            Desc: `(2022 - now) - Kierunek Informatyka`
           }
         ],
         WorkExp: 'Work Experience',
