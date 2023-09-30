@@ -54,7 +54,7 @@ export const projectObjFunc = () => {
     },
     {
       imageURL: noImagePic,
-      projectName: 'Todo list app (backend)',
+      projectName: 'Todo list app',
       projectDesc: selectedLanguage.MyWork.Project4,
       LivePreviewLink: '',
       GithubLink: 'https://github.com/kdKrzysztof/TodoApp',
