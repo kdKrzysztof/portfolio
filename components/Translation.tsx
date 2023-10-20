@@ -106,11 +106,11 @@ export const Translation = {
         EduDesc: [
           {
             Title: `Zespół Szkół im. Walerego Goetla w Suchej Beskidzkiej`,
-            Desc: `(2018 - 2022) - Technik Informatyk`
+            Desc: `(2018 - 2022) - IT technician`
           },
           {
             Title: `Wyższa Szkoła Turystyki i Ekologii w Suchej Beskidzkiej`,
-            Desc: `(2022 - now) - Kierunek Informatyka`
+            Desc: `(2022 - now) - Computer Science`
           }
         ],
         WorkExp: 'Work Experience',
